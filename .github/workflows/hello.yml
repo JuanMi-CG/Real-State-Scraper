@@ -21,6 +21,10 @@ jobs:
           python-version: "3.x"
 
       - name: Run script
+        env:
+          EMAIL_USER: ${{ secrets.EMAIL_USER }}
+          EMAIL_PASS: ${{ secrets.EMAIL_PASS }}
+          EMAIL_RECIEVER: ${{ secrets.EMAIL_RECIEVER }}
         run: |
           python script.py
 
