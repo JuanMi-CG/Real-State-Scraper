@@ -24,7 +24,8 @@ jobs:
         env:
           EMAIL_USER: ${{ secrets.EMAIL_USER }}
           EMAIL_PASS: ${{ secrets.EMAIL_PASS }}
-          EMAIL_RECIEVER: ${{ secrets.EMAIL_RECIEVER }}
+          EMAIL_RECEIVER: ${{ secrets.EMAIL_RECEIVER }} # Fix typo here
+
         run: |
           python script.py
 

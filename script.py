@@ -5,7 +5,7 @@ from email.mime.multipart import MIMEMultipart
 
 # Obtener credenciales de los Secrets
 sender_email = os.environ["EMAIL_USER"]
-receiver_email = os.environ["EMAIL_RECIEVER"]
+receiver_email = os.environ["EMAIL_RECEIVER"]  # Fix typo here
 password = os.environ["EMAIL_PASS"]
 
 subject = "Hello from GitHub Actions"
