@@ -1,2 +1,1 @@
-hello2
-hello2
+Número aleatorio generado: 17
