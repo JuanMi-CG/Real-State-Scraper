@@ -2,6 +2,18 @@ import os
 import smtplib
 from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
+import random
+
+
+# Generar un número aleatorio
+random_number = random.randint(1, 100)
+output_file = "output.txt"
+
+# Guardar el número en un archivo
+with open(output_file, "w") as file:
+    file.write(f"Número aleatorio generado: {random_number}\n")
+print(f"Número aleatorio {random_number} guardado en {output_file}")
+
 
 # Obtener credenciales de los Secrets
 sender_email = os.environ["EMAIL_USER"]
