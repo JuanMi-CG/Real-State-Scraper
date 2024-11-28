@@ -1,2 +1,2 @@
 with open("output.txt", "a") as file:
-    file.write("hello\n")
+    file.write("hello2\n")
