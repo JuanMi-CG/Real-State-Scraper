@@ -16,16 +16,15 @@ def get_email_content(file_path):
     
     # Generar subject
     num_viviendas = len(df)
-    subject = f"Actualización: {num_viviendas} nuevas viviendas disponibles"
+    subject = f"Actualización axius: {num_viviendas} nuevas viviendas disponibles"
     
     # Generar body
-    resumen = df.head(5).to_string(index=False)  # Mostrar primeras 5 viviendas
+    resumen = df.to_string(index=False)
     body = (
         f"Estimado equipo,\n\n"
-        f"Se han registrado {num_viviendas} nuevas viviendas en el sistema. A continuación, "
-        f"se presenta un resumen de las primeras cinco:\n\n"
+        f"Se han registrado {num_viviendas} nuevas viviendas en el sistema. Dejo los sus datos a continuación:\n\n"
         f"{resumen}\n\n"
-        f"Para más detalles, consulte el archivo adjunto o acceda al sistema."
+        f"Un saludo! Nos vemos pronto."
     )
     
     return subject, body
