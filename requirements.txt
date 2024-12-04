@@ -1,0 +1,5 @@
+selenium==4.27.1
+webdriver-manager==4.0.2
+beautifulsoup4==4.12.3
+pandas==2.2.3
+boto3==1.35.74

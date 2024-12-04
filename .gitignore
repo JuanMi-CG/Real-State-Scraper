@@ -1,1 +1,6 @@
 .env
+.old
+__pycache__
+venv
+viviendas/*
+axius/*
