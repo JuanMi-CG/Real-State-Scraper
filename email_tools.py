@@ -19,10 +19,10 @@ def get_email_content(file_path):
     subject = f"Actualización axius: {num_viviendas} nuevas viviendas disponibles"
     
     # Generar body
-    resumen = df.to_string(index=False)
+    resumen = df.to_html(index=False, border=0)
     body = (
         f"Estimado equipo,\n\n"
-        f"Se han registrado {num_viviendas} nuevas viviendas en el sistema. Dejo los sus datos a continuación:\n\n"
+        f"Se han registrado {num_viviendas} nuevas viviendas en el sistema. Adjunto los datos a continuación:\n\n"
         f"{resumen}\n\n"
         f"Un saludo! Nos vemos pronto."
     )

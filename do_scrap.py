@@ -3,6 +3,7 @@ import pandas as pd
 import axius
 import aws
 import email_tools
+import time_lapse
 
 # Load environment variables from .env file for local testing
 from dotenv import load_dotenv
@@ -34,3 +35,10 @@ if not df.empty:
     email_tools.send_email(sender_email, receiver_email, password, subject, body)
 else:
     print("No new properties are available. Email won't be sent.")
+    last_email = time_lapse.days_since_last_email()
+    if time_lapse.days_since_last_email() > 7:
+        # Health reminder
+        subject = "AXIUS SCRAPER - Sin viviendas nuevas"
+        body = f"Hola!\n\nSigo scrapeando la web de axius pero no ha habido viviendas en los últimos {last_email} dias.\n\n Escribiré de nuevo en 7 dias o \n\nNos vemos!"
+        email_tools.send_email(sender_email, receiver_email, password, subject, body)
+        time_lapse.update_last_email_date()

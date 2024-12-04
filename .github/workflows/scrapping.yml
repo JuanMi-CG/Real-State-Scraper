@@ -2,7 +2,8 @@ name: Do Scrap of the axius website
 
 on:
   schedule:
-    - cron: "*/5 * * * *" # Runs every 5 minutes
+    # - cron: "*/5 * * * *"
+    - cron: "0 0 * * *" # Runs at midnight every day
   push:
     branches:
       - main
@@ -40,11 +41,14 @@ jobs:
         run: |
           python do_scrap.py
 
-      # - name: Commit and push changes
-      #   run: |
-      #     git config --global user.name "github-actions[bot]"
-      #     git config --global user.email "github-actions[bot]@users.noreply.github.com"
-      #     git commit -m "Scrap done"
-      #     git push
-      #   env:
-      #     GITHUB_TOKEN: 
+      # Optional: Commit and push changes
+      - name: Commit and push changes
+        if: success()
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git commit -m "Scrap done: $(date)"
+          git push
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
