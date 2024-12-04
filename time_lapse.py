@@ -1,8 +1,9 @@
 from datetime import datetime
 
-file_path = 'last_sent_email.txt'
+
 
 def days_since_last_email():
+    file_path = 'last_sent_email.txt'
     try:
         with open(file_path, 'r') as file:
             last_date_str = file.read().strip()
@@ -25,6 +26,7 @@ def days_since_last_email():
     
 
 def update_last_email_date():
+    file_path = 'last_sent_email.txt'
     try:
         # Get today's date in DD/MM/YYYY format
         today_str = datetime.today().strftime('%d/%m/%Y')
