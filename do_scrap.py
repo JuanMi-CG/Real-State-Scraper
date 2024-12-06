@@ -24,13 +24,13 @@ new_properties_path = os.environ["NEW_PROPERTIES_PATH"]
 
 
 # --------------------------------- EJECUCIÓN PRINCIPAL
-aws.download_file_from_s3(bucket_name, s3_key, properties_path)
+# aws.download_file_from_s3(bucket_name, s3_key, properties_path)
 axius.scrap_axius()
 
 df = pd.read_pickle(new_properties_path)
 if not df.empty:
     print(f'{len(df)} new properties are available. Sending email...')
-    aws.upload_file_to_s3(bucket_name, properties_path, s3_key)
+    # aws.upload_file_to_s3(bucket_name, properties_path, s3_key)
     subject, body = email_tools.get_email_content(new_properties_path)
     email_tools.send_email(sender_email, receiver_email, password, subject, body)
 else:
