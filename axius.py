@@ -10,6 +10,8 @@ from selenium.webdriver.support import expected_conditions as EC
 from bs4 import BeautifulSoup
 from webdriver_manager.chrome import ChromeDriverManager
 
+from clogger import logger
+
 
 def initialize_driver():
     """Initialize and return a Selenium WebDriver with configured options."""
@@ -30,7 +32,7 @@ def initialize_driver():
 def save_html(driver, url, output_file):
     """Save the HTML content of a URL to a local file."""
     if os.path.exists(output_file):
-        print(f"Skipping download: {output_file} already exists.")
+        logger.info(f"Skipping download: {output_file} already exists.")
         return
 
     try:
@@ -40,9 +42,9 @@ def save_html(driver, url, output_file):
         )
         with open(output_file, "w", encoding="utf-8") as file:
             file.write(driver.page_source)
-        print(f"HTML saved to {output_file}.")
+        logger.info(f"HTML saved to {output_file}.")
     except Exception as e:
-        print(f"Error accessing {url}: {e}")
+        logger.error(f"Error accessing {url}: {e}")
 
 
 def load_or_initialize_pickle(file_path, columns):
@@ -80,10 +82,10 @@ def extract_data_from_html(html_file):
                 if ref or price:
                     div_data.append({"ref": ref, "price": price})
                 else:
-                    print(f"Skipping div with no data: {div}")
+                    logger.info(f"Skipping div with no data: {div}")
 
             except Exception as e:
-                print(f"Error processing div {div}: {e}")
+                logger.error(f"Error processing div {div}: {e}")
 
         # Step 2: Extract Articles
         articles = soup.find_all("article", id=lambda x: x and x.startswith("inmueble_"))
@@ -96,7 +98,7 @@ def extract_data_from_html(html_file):
                 # Store property code for URL construction
                 article_data_list.append(f"https://arxus.es/ficha-inmueble/?cod_inmueble={property_code}")
             except Exception as e:
-                print(f"Error processing article {article}: {e}")
+                logger.error(f"Error processing article {article}: {e}")
 
         # Step 3: Merge DIV and Article Data
         final_data = []
@@ -110,12 +112,12 @@ def extract_data_from_html(html_file):
             if ref and property_url:
                 final_data.append({"ref": ref, "price": price, "url": property_url})
             else:
-                print(f"Skipping item due to missing URL: ref={ref}, price={price}")
+                logger.error(f"Skipping item due to missing URL: ref={ref}, price={price}")
 
         return pd.DataFrame(final_data)
 
     except Exception as e:
-        print(f"Error parsing HTML file {html_file}: {e}")
+        logger.error(f"Error parsing HTML file {html_file}: {e}")
         return pd.DataFrame()
 
 
@@ -152,7 +154,7 @@ def process_page(driver, url, html_file, pickle_file, new_pickle_file):
         combined_new_properties = merge_dataframes(existing_new_properties, new_properties)
         save_to_pickle(combined_new_properties, new_pickle_file)
 
-    print(f"Number of items: {len(updated_data)}")
+    logger.info(f"Number of items: {len(updated_data)}")
 
     return updated_data, new_properties
 
@@ -172,7 +174,7 @@ def get_total_items(driver, url, output_dir):
 
         return total_items
     except Exception as e:
-        print(f"Error get_total_items(). Exception: {e}")
+        logger.info(f"Error get_total_items(). Exception: {e}")
         return 0
 
 
@@ -184,21 +186,21 @@ def scrape_all_pages(base_url, page_template, output_dir, main_pickle_file, new_
     # Initialize the 'new_properties.pkl' as an empty DataFrame
     empty_df = pd.DataFrame(columns=["ref", "price", "url"])
     save_to_pickle(empty_df, new_pickle_file)
-    print(f"Initialized a fresh new_properties file at {new_pickle_file}.")
+    logger.info(f"Initialized a fresh new_properties file at {new_pickle_file}.")
 
     driver = initialize_driver()
     try:
         total_items = get_total_items(driver, base_url, output_dir)
-        print(f'Total Properties: {total_items}')
+        logger.info(f'Total Properties: {total_items}')
         total_pages = math.ceil(total_items / items_per_page)
         for page in range(total_pages):
             url = base_url if page == 0 else page_template.format(page=page)
             html_file = os.path.join(output_dir, f"page_{page + 1}.html")
-            print('-'*100)
-            print(f"Scraping page {page + 1}/{total_pages}...")
+            logger.info('-'*100)
+            logger.info(f"Scraping page {page + 1}/{total_pages}...")
             process_page(driver, url, html_file, main_pickle_file, new_pickle_file)
     except Exception as e:
-        print(f'Excepcion: {e}')
+        logger.info(f'Excepcion: {e}')
     finally:
         driver.quit()
 

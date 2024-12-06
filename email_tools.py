@@ -6,9 +6,10 @@ import pandas as pd
 
 import time_lapse
 
+from clogger import logger
+
 
 def get_email_content(file_path):
-    import pandas as pd
     
     # Cargar el DataFrame
     df = pd.read_pickle(file_path)
@@ -75,10 +76,10 @@ def send_email(sender_email, receiver_email, password, subject, body):
             server.starttls()  # Enable TLS encryption
             server.login(sender_email, password)  # Log in to the SMTP server
             server.sendmail(sender_email, receiver_email_list, message.as_string())  # Send the email
-            print("Correo enviado con éxito")
+            logger.info("Correo enviado con éxito")
             time_lapse.update_last_email_date()
     except Exception as e:
-        print(f"Error al enviar el correo: {e}")
+        logger.error(f"Error al enviar el correo: {e}")
 
 
 def send_health_reminder(sender_email, receiver_email, password, last_email_days):

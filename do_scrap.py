@@ -5,6 +5,8 @@ import aws
 import email_tools
 import time_lapse
 
+from clogger import logger
+
 # # Load environment variables from .env file for local testing
 # from dotenv import load_dotenv
 # load_dotenv(override=True)
@@ -29,7 +31,7 @@ axius.scrap_axius()
 
 df = pd.read_pickle(new_properties_path)
 if not df.empty:
-    print(f'{len(df)} new properties are available. Sending email...')
+    logger.info(f'{len(df)} new properties are available. Sending email...')
     # aws.upload_file_to_s3(bucket_name, properties_path, s3_key)
     subject, body = email_tools.get_email_content(new_properties_path)
     email_tools.send_email(sender_email, receiver_email, password, subject, body)
@@ -38,4 +40,4 @@ else:
     if last_email_days > 7:
         email_tools.send_health_reminder(sender_email, receiver_email, password, last_email_days)
     else:
-        print("No new properties are available. Email won't be sent.")
+        logger.info("No new properties are available. Email won't be sent.")
