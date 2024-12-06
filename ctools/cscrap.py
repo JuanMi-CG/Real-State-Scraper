@@ -7,7 +7,8 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from webdriver_manager.chrome import ChromeDriverManager
-
+import time
+import random
 
 from ctools.clogger import logger
 
@@ -36,6 +37,7 @@ def save_html(driver, url, output_file):
         return
 
     try:
+        time.sleep(random.uniform(1, 5))
         driver.get(url)
         WebDriverWait(driver, 10).until(
             EC.presence_of_element_located((By.CLASS_NAME, "mh-estate-vertical__primary"))
