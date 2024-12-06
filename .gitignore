@@ -2,6 +2,6 @@
 .old
 __pycache__
 venv
-viviendas/*
+
 axius/*
-!axius/properties.pkl
+inmocasal/*

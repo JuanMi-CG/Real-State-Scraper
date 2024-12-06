@@ -8,7 +8,7 @@ from ctools import cscrap
 
 
 COLUMNS = ["ref", "price", "url", "inmobiliaria"]
-FOLDER_NAME = 'axius'
+FOLDER_NAME = 'inmocasal'
 
 def extract_data_from_html(html_file):
     """Extract relevant data from the HTML file using BeautifulSoup."""

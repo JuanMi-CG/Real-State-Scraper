@@ -33,21 +33,15 @@ jobs:
           EMAIL_USER: ${{ secrets.EMAIL_USER }}
           EMAIL_PASS: ${{ secrets.EMAIL_PASS }}
           EMAIL_RECEIVER: ${{ secrets.EMAIL_RECEIVER }}
-          BUCKET_NAME: ${{ secrets.BUCKET_NAME }}
-          S3_KEY: ${{ secrets.S3_KEY }}
-          PROPERTIES_PATH: ${{ secrets.PROPERTIES_PATH }}
-          NEW_PROPERTIES_PATH: ${{ secrets.NEW_PROPERTIES_PATH }}
         run: |
           python do_scrap.py
 
       # Optional: Commit and push changes
       - name: Commit and push changes
-        if: success()
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          git add last_sent_email.txt
-          git add axius/properties.pkl
+          git add results/
           git add do_scrap.log
           git commit -m "Scrap done: $(date)"
           git push

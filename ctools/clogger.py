@@ -3,7 +3,7 @@ import pandas as pd
 import builtins
 
 # Configuración global del logger
-logger = logging.getLogger('global_logger')
+logger = logging.getLogger('srap_logging')
 logger.setLevel(logging.DEBUG)
 
 # File handler

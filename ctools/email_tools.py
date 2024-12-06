@@ -5,15 +5,14 @@ from email.mime.multipart import MIMEMultipart
 import pandas as pd
 import os
 
-import time_lapse
-from clogger import logger
+from ctools import time_lapse
+from ctools.clogger import logger
 
 
 SEND_EMAILS = (os.getenv('SEND_EMAILS', 'false') == 'true')
 
 
-def emailing(df, folder_name, sender_email, receiver_email, password):
-    new_properties_path = os.path.join(folder_name, 'new_properties.pkl')
+def emailing(df, new_properties_path, sender_email, receiver_email, password):
     if not df.empty:
         logger.info(f'{len(df)} new properties are available. Sending email...')
         # aws.upload_file_to_s3(bucket_name, properties_path, s3_key)
@@ -43,7 +42,7 @@ def get_email_content(file_path):
     
     # Generar subject
     num_viviendas = len(df)
-    subject = f"Actualización axius: {num_viviendas} nuevas viviendas disponibles"
+    subject = f"Actualización: {num_viviendas} nuevas viviendas disponibles"
     
     # Generar resumen en formato HTML
     resumen = df.to_html(index=False, border=1, classes="dataframe", justify="center")
@@ -108,12 +107,12 @@ def send_email(sender_email, receiver_email, password, subject, body):
 
 def send_health_reminder(sender_email, receiver_email, password, last_email_days):
     # Health reminder
-    subject = "AXIUS SCRAPER - Sin viviendas nuevas"
+    subject = "SCRAPER - Sin viviendas nuevas"
     html_body = f"""
     <html>
         <body>
             <p>Hola!</p>
-            <p>Sigo scrapeando la web de Axius pero no ha habido viviendas en los últimos <strong>{last_email_days} días</strong>.</p>
+            <p>Sigo scrapeando las webs pero no ha habido viviendas en los últimos <strong>{last_email_days} días</strong>.</p>
             <p>Escribiré de nuevo en <strong>7 días</strong> o cuando aparezcan nuevas viviendas.</p>
             <p>Nos vemos!</p>
         </body>
