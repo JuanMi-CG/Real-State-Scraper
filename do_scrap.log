@@ -69,3 +69,286 @@ Stacktrace:
 2024-12-06 07:34:37,447 - global_logger - INFO - Excepcion: 'ref'
 2024-12-06 07:34:37,523 - global_logger - INFO - 120 new properties are available. Sending email...
 2024-12-06 07:34:38,752 - global_logger - INFO - Correo enviado con Ã©xito
+2024-12-06 09:24:58,972 - global_logger - INFO - Initialized a fresh new_properties file at axius/new_properties.pkl.
+2024-12-06 09:25:08,541 - global_logger - INFO - HTML saved to axius\page_1.html.
+2024-12-06 09:25:08,699 - global_logger - INFO - Total Properties: 147
+2024-12-06 09:25:08,700 - global_logger - INFO - ----------------------------------------------------------------------------------------------------
+2024-12-06 09:25:08,700 - global_logger - INFO - Scraping page 1/13...
+2024-12-06 09:25:08,700 - global_logger - INFO - Skipping download: axius\page_1.html already exists.
+2024-12-06 09:25:08,823 - global_logger - INFO - Number of items: 120
+2024-12-06 09:25:08,824 - global_logger - INFO - ----------------------------------------------------------------------------------------------------
+2024-12-06 09:25:08,824 - global_logger - INFO - Scraping page 2/13...
+2024-12-06 09:25:11,053 - global_logger - INFO - HTML saved to axius\page_2.html.
+2024-12-06 09:25:11,213 - global_logger - INFO - Number of items: 120
+2024-12-06 09:25:11,216 - global_logger - INFO - ----------------------------------------------------------------------------------------------------
+2024-12-06 09:25:11,216 - global_logger - INFO - Scraping page 3/13...
+2024-12-06 09:25:13,558 - global_logger - INFO - HTML saved to axius\page_3.html.
+2024-12-06 09:25:13,726 - global_logger - INFO - Number of items: 120
+2024-12-06 09:25:13,726 - global_logger - INFO - ----------------------------------------------------------------------------------------------------
+2024-12-06 09:25:13,727 - global_logger - INFO - Scraping page 4/13...
+2024-12-06 09:25:15,786 - global_logger - INFO - HTML saved to axius\page_4.html.
+2024-12-06 09:25:15,968 - global_logger - INFO - Number of items: 120
+2024-12-06 09:25:15,969 - global_logger - INFO - ----------------------------------------------------------------------------------------------------
+2024-12-06 09:25:15,970 - global_logger - INFO - Scraping page 5/13...
+2024-12-06 09:25:18,007 - global_logger - INFO - HTML saved to axius\page_5.html.
+2024-12-06 09:25:18,211 - global_logger - INFO - Number of items: 120
+2024-12-06 09:25:18,211 - global_logger - INFO - ----------------------------------------------------------------------------------------------------
+2024-12-06 09:25:18,212 - global_logger - INFO - Scraping page 6/13...
+2024-12-06 09:25:20,305 - global_logger - INFO - HTML saved to axius\page_6.html.
+2024-12-06 09:25:20,458 - global_logger - INFO - Number of items: 120
+2024-12-06 09:25:20,458 - global_logger - INFO - ----------------------------------------------------------------------------------------------------
+2024-12-06 09:25:20,458 - global_logger - INFO - Scraping page 7/13...
+2024-12-06 09:25:22,567 - global_logger - INFO - HTML saved to axius\page_7.html.
+2024-12-06 09:25:22,717 - global_logger - INFO - Number of items: 120
+2024-12-06 09:25:22,718 - global_logger - INFO - ----------------------------------------------------------------------------------------------------
+2024-12-06 09:25:22,719 - global_logger - INFO - Scraping page 8/13...
+2024-12-06 09:25:24,750 - global_logger - INFO - HTML saved to axius\page_8.html.
+2024-12-06 09:25:24,904 - global_logger - INFO - Number of items: 120
+2024-12-06 09:25:24,904 - global_logger - INFO - ----------------------------------------------------------------------------------------------------
+2024-12-06 09:25:24,904 - global_logger - INFO - Scraping page 9/13...
+2024-12-06 09:25:27,244 - global_logger - INFO - HTML saved to axius\page_9.html.
+2024-12-06 09:25:27,411 - global_logger - INFO - Number of items: 120
+2024-12-06 09:25:27,412 - global_logger - INFO - ----------------------------------------------------------------------------------------------------
+2024-12-06 09:25:27,413 - global_logger - INFO - Scraping page 10/13...
+2024-12-06 09:25:29,507 - global_logger - INFO - HTML saved to axius\page_10.html.
+2024-12-06 09:25:29,666 - global_logger - INFO - Number of items: 120
+2024-12-06 09:25:29,667 - global_logger - INFO - ----------------------------------------------------------------------------------------------------
+2024-12-06 09:25:29,668 - global_logger - INFO - Scraping page 11/13...
+2024-12-06 09:25:31,577 - global_logger - INFO - HTML saved to axius\page_11.html.
+2024-12-06 09:25:31,767 - global_logger - INFO - Number of items: 132
+2024-12-06 09:25:31,767 - global_logger - INFO - ----------------------------------------------------------------------------------------------------
+2024-12-06 09:25:31,767 - global_logger - INFO - Scraping page 12/13...
+2024-12-06 09:25:33,566 - global_logger - INFO - HTML saved to axius\page_12.html.
+2024-12-06 09:25:33,731 - global_logger - INFO - Number of items: 144
+2024-12-06 09:25:33,732 - global_logger - INFO - ----------------------------------------------------------------------------------------------------
+2024-12-06 09:25:33,732 - global_logger - INFO - Scraping page 13/13...
+2024-12-06 09:25:35,482 - global_logger - INFO - HTML saved to axius\page_13.html.
+2024-12-06 09:25:35,617 - global_logger - INFO - Number of items: 147
+2024-12-06 09:25:37,794 - global_logger - INFO - 27 new properties are available. Sending email...
+2024-12-06 09:25:40,344 - global_logger - INFO - Correo enviado con éxito
+2024-12-06 09:33:46,587 - global_logger - INFO - Initialized a fresh new_properties file at axius/new_properties.pkl.
+2024-12-06 09:33:50,663 - global_logger - INFO - Skipping download: axius\page_1.html already exists.
+2024-12-06 09:33:50,720 - global_logger - INFO - Total Properties: 147
+2024-12-06 09:33:50,720 - global_logger - INFO - ----------------------------------------------------------------------------------------------------
+2024-12-06 09:33:50,720 - global_logger - INFO - Scraping page 1/13...
+2024-12-06 09:33:50,721 - global_logger - INFO - Skipping download: axius\page_1.html already exists.
+2024-12-06 09:33:50,794 - global_logger - INFO - Number of items: 147
+2024-12-06 09:33:50,795 - global_logger - INFO - ----------------------------------------------------------------------------------------------------
+2024-12-06 09:33:50,795 - global_logger - INFO - Scraping page 2/13...
+2024-12-06 09:33:50,795 - global_logger - INFO - Skipping download: axius\page_2.html already exists.
+2024-12-06 09:33:50,873 - global_logger - INFO - Number of items: 147
+2024-12-06 09:33:50,874 - global_logger - INFO - ----------------------------------------------------------------------------------------------------
+2024-12-06 09:33:50,874 - global_logger - INFO - Scraping page 3/13...
+2024-12-06 09:33:50,875 - global_logger - INFO - Skipping download: axius\page_3.html already exists.
+2024-12-06 09:33:50,949 - global_logger - INFO - Number of items: 147
+2024-12-06 09:33:50,950 - global_logger - INFO - ----------------------------------------------------------------------------------------------------
+2024-12-06 09:33:50,950 - global_logger - INFO - Scraping page 4/13...
+2024-12-06 09:33:50,950 - global_logger - INFO - Skipping download: axius\page_4.html already exists.
+2024-12-06 09:33:51,022 - global_logger - INFO - Number of items: 147
+2024-12-06 09:33:51,022 - global_logger - INFO - ----------------------------------------------------------------------------------------------------
+2024-12-06 09:33:51,022 - global_logger - INFO - Scraping page 5/13...
+2024-12-06 09:33:51,023 - global_logger - INFO - Skipping download: axius\page_5.html already exists.
+2024-12-06 09:33:51,129 - global_logger - INFO - Number of items: 147
+2024-12-06 09:33:51,129 - global_logger - INFO - ----------------------------------------------------------------------------------------------------
+2024-12-06 09:33:51,129 - global_logger - INFO - Scraping page 6/13...
+2024-12-06 09:33:51,130 - global_logger - INFO - Skipping download: axius\page_6.html already exists.
+2024-12-06 09:33:51,200 - global_logger - INFO - Number of items: 147
+2024-12-06 09:33:51,201 - global_logger - INFO - ----------------------------------------------------------------------------------------------------
+2024-12-06 09:33:51,201 - global_logger - INFO - Scraping page 7/13...
+2024-12-06 09:33:51,202 - global_logger - INFO - Skipping download: axius\page_7.html already exists.
+2024-12-06 09:33:51,269 - global_logger - INFO - Number of items: 147
+2024-12-06 09:33:51,269 - global_logger - INFO - ----------------------------------------------------------------------------------------------------
+2024-12-06 09:33:51,270 - global_logger - INFO - Scraping page 8/13...
+2024-12-06 09:33:51,270 - global_logger - INFO - Skipping download: axius\page_8.html already exists.
+2024-12-06 09:33:51,339 - global_logger - INFO - Number of items: 147
+2024-12-06 09:33:51,339 - global_logger - INFO - ----------------------------------------------------------------------------------------------------
+2024-12-06 09:33:51,340 - global_logger - INFO - Scraping page 9/13...
+2024-12-06 09:33:51,340 - global_logger - INFO - Skipping download: axius\page_9.html already exists.
+2024-12-06 09:33:51,414 - global_logger - INFO - Number of items: 147
+2024-12-06 09:33:51,415 - global_logger - INFO - ----------------------------------------------------------------------------------------------------
+2024-12-06 09:33:51,416 - global_logger - INFO - Scraping page 10/13...
+2024-12-06 09:33:51,416 - global_logger - INFO - Skipping download: axius\page_10.html already exists.
+2024-12-06 09:33:51,485 - global_logger - INFO - Number of items: 147
+2024-12-06 09:33:51,485 - global_logger - INFO - ----------------------------------------------------------------------------------------------------
+2024-12-06 09:33:51,486 - global_logger - INFO - Scraping page 11/13...
+2024-12-06 09:33:51,486 - global_logger - INFO - Skipping download: axius\page_11.html already exists.
+2024-12-06 09:33:51,553 - global_logger - INFO - Number of items: 147
+2024-12-06 09:33:51,553 - global_logger - INFO - ----------------------------------------------------------------------------------------------------
+2024-12-06 09:33:51,554 - global_logger - INFO - Scraping page 12/13...
+2024-12-06 09:33:51,555 - global_logger - INFO - Skipping download: axius\page_12.html already exists.
+2024-12-06 09:33:51,623 - global_logger - INFO - Number of items: 147
+2024-12-06 09:33:51,624 - global_logger - INFO - ----------------------------------------------------------------------------------------------------
+2024-12-06 09:33:51,624 - global_logger - INFO - Scraping page 13/13...
+2024-12-06 09:33:51,624 - global_logger - INFO - Skipping download: axius\page_13.html already exists.
+2024-12-06 09:33:51,668 - global_logger - INFO - Number of items: 147
+2024-12-06 09:34:14,124 - global_logger - INFO - Initialized a fresh new_properties file at axius/new_properties.pkl.
+2024-12-06 09:34:17,325 - global_logger - INFO - Skipping download: axius\page_1.html already exists.
+2024-12-06 09:34:17,378 - global_logger - INFO - Total Properties: 147
+2024-12-06 09:34:17,379 - global_logger - INFO - ----------------------------------------------------------------------------------------------------
+2024-12-06 09:34:17,379 - global_logger - INFO - Scraping page 1/13...
+2024-12-06 09:34:17,379 - global_logger - INFO - Skipping download: axius\page_1.html already exists.
+2024-12-06 09:34:17,452 - global_logger - INFO - Number of items: 147
+2024-12-06 09:34:17,453 - global_logger - INFO - ----------------------------------------------------------------------------------------------------
+2024-12-06 09:34:17,453 - global_logger - INFO - Scraping page 2/13...
+2024-12-06 09:34:17,453 - global_logger - INFO - Skipping download: axius\page_2.html already exists.
+2024-12-06 09:34:17,526 - global_logger - INFO - Number of items: 147
+2024-12-06 09:34:17,526 - global_logger - INFO - ----------------------------------------------------------------------------------------------------
+2024-12-06 09:34:17,526 - global_logger - INFO - Scraping page 3/13...
+2024-12-06 09:34:17,527 - global_logger - INFO - Skipping download: axius\page_3.html already exists.
+2024-12-06 09:34:17,601 - global_logger - INFO - Number of items: 147
+2024-12-06 09:34:17,602 - global_logger - INFO - ----------------------------------------------------------------------------------------------------
+2024-12-06 09:34:17,602 - global_logger - INFO - Scraping page 4/13...
+2024-12-06 09:34:17,603 - global_logger - INFO - Skipping download: axius\page_4.html already exists.
+2024-12-06 09:34:17,677 - global_logger - INFO - Number of items: 147
+2024-12-06 09:34:17,677 - global_logger - INFO - ----------------------------------------------------------------------------------------------------
+2024-12-06 09:34:17,678 - global_logger - INFO - Scraping page 5/13...
+2024-12-06 09:34:17,678 - global_logger - INFO - Skipping download: axius\page_5.html already exists.
+2024-12-06 09:34:17,774 - global_logger - INFO - Number of items: 147
+2024-12-06 09:34:17,775 - global_logger - INFO - ----------------------------------------------------------------------------------------------------
+2024-12-06 09:34:17,775 - global_logger - INFO - Scraping page 6/13...
+2024-12-06 09:34:17,776 - global_logger - INFO - Skipping download: axius\page_6.html already exists.
+2024-12-06 09:34:17,843 - global_logger - INFO - Number of items: 147
+2024-12-06 09:34:17,843 - global_logger - INFO - ----------------------------------------------------------------------------------------------------
+2024-12-06 09:34:17,843 - global_logger - INFO - Scraping page 7/13...
+2024-12-06 09:34:17,843 - global_logger - INFO - Skipping download: axius\page_7.html already exists.
+2024-12-06 09:34:17,917 - global_logger - INFO - Number of items: 147
+2024-12-06 09:34:17,918 - global_logger - INFO - ----------------------------------------------------------------------------------------------------
+2024-12-06 09:34:17,918 - global_logger - INFO - Scraping page 8/13...
+2024-12-06 09:34:17,919 - global_logger - INFO - Skipping download: axius\page_8.html already exists.
+2024-12-06 09:34:17,988 - global_logger - INFO - Number of items: 147
+2024-12-06 09:34:17,988 - global_logger - INFO - ----------------------------------------------------------------------------------------------------
+2024-12-06 09:34:17,988 - global_logger - INFO - Scraping page 9/13...
+2024-12-06 09:34:17,988 - global_logger - INFO - Skipping download: axius\page_9.html already exists.
+2024-12-06 09:34:18,054 - global_logger - INFO - Number of items: 147
+2024-12-06 09:34:18,054 - global_logger - INFO - ----------------------------------------------------------------------------------------------------
+2024-12-06 09:34:18,055 - global_logger - INFO - Scraping page 10/13...
+2024-12-06 09:34:18,055 - global_logger - INFO - Skipping download: axius\page_10.html already exists.
+2024-12-06 09:34:18,128 - global_logger - INFO - Number of items: 147
+2024-12-06 09:34:18,128 - global_logger - INFO - ----------------------------------------------------------------------------------------------------
+2024-12-06 09:34:18,129 - global_logger - INFO - Scraping page 11/13...
+2024-12-06 09:34:18,130 - global_logger - INFO - Skipping download: axius\page_11.html already exists.
+2024-12-06 09:34:18,193 - global_logger - INFO - Number of items: 147
+2024-12-06 09:34:18,198 - global_logger - INFO - ----------------------------------------------------------------------------------------------------
+2024-12-06 09:34:18,199 - global_logger - INFO - Scraping page 12/13...
+2024-12-06 09:34:18,199 - global_logger - INFO - Skipping download: axius\page_12.html already exists.
+2024-12-06 09:34:18,265 - global_logger - INFO - Number of items: 147
+2024-12-06 09:34:18,266 - global_logger - INFO - ----------------------------------------------------------------------------------------------------
+2024-12-06 09:34:18,267 - global_logger - INFO - Scraping page 13/13...
+2024-12-06 09:34:18,267 - global_logger - INFO - Skipping download: axius\page_13.html already exists.
+2024-12-06 09:34:18,317 - global_logger - INFO - Number of items: 147
+2024-12-06 09:34:20,420 - global_logger - INFO - 147 new properties are available. Sending email...
+2024-12-06 09:34:23,729 - global_logger - INFO - Correo enviado con éxito
+2024-12-06 09:35:37,270 - global_logger - INFO - Initialized a fresh new_properties file at axius/new_properties.pkl.
+2024-12-06 09:35:40,490 - global_logger - INFO - Skipping download: axius\page_1.html already exists.
+2024-12-06 09:35:40,543 - global_logger - INFO - Total Properties: 147
+2024-12-06 09:35:40,544 - global_logger - INFO - ----------------------------------------------------------------------------------------------------
+2024-12-06 09:35:40,544 - global_logger - INFO - Scraping page 1/13...
+2024-12-06 09:35:40,544 - global_logger - INFO - Skipping download: axius\page_1.html already exists.
+2024-12-06 09:35:40,613 - global_logger - INFO - Number of items: 147
+2024-12-06 09:35:40,613 - global_logger - INFO - ----------------------------------------------------------------------------------------------------
+2024-12-06 09:35:40,613 - global_logger - INFO - Scraping page 2/13...
+2024-12-06 09:35:40,613 - global_logger - INFO - Skipping download: axius\page_2.html already exists.
+2024-12-06 09:35:40,684 - global_logger - INFO - Number of items: 147
+2024-12-06 09:35:40,685 - global_logger - INFO - ----------------------------------------------------------------------------------------------------
+2024-12-06 09:35:40,685 - global_logger - INFO - Scraping page 3/13...
+2024-12-06 09:35:40,685 - global_logger - INFO - Skipping download: axius\page_3.html already exists.
+2024-12-06 09:35:40,754 - global_logger - INFO - Number of items: 147
+2024-12-06 09:35:40,754 - global_logger - INFO - ----------------------------------------------------------------------------------------------------
+2024-12-06 09:35:40,754 - global_logger - INFO - Scraping page 4/13...
+2024-12-06 09:35:40,754 - global_logger - INFO - Skipping download: axius\page_4.html already exists.
+2024-12-06 09:35:40,836 - global_logger - INFO - Number of items: 147
+2024-12-06 09:35:40,837 - global_logger - INFO - ----------------------------------------------------------------------------------------------------
+2024-12-06 09:35:40,837 - global_logger - INFO - Scraping page 5/13...
+2024-12-06 09:35:40,837 - global_logger - INFO - Skipping download: axius\page_5.html already exists.
+2024-12-06 09:35:40,935 - global_logger - INFO - Number of items: 147
+2024-12-06 09:35:40,935 - global_logger - INFO - ----------------------------------------------------------------------------------------------------
+2024-12-06 09:35:40,935 - global_logger - INFO - Scraping page 6/13...
+2024-12-06 09:35:40,935 - global_logger - INFO - Skipping download: axius\page_6.html already exists.
+2024-12-06 09:35:41,003 - global_logger - INFO - Number of items: 147
+2024-12-06 09:35:41,003 - global_logger - INFO - ----------------------------------------------------------------------------------------------------
+2024-12-06 09:35:41,003 - global_logger - INFO - Scraping page 7/13...
+2024-12-06 09:35:41,003 - global_logger - INFO - Skipping download: axius\page_7.html already exists.
+2024-12-06 09:35:41,078 - global_logger - INFO - Number of items: 147
+2024-12-06 09:35:41,078 - global_logger - INFO - ----------------------------------------------------------------------------------------------------
+2024-12-06 09:35:41,078 - global_logger - INFO - Scraping page 8/13...
+2024-12-06 09:35:41,078 - global_logger - INFO - Skipping download: axius\page_8.html already exists.
+2024-12-06 09:35:41,149 - global_logger - INFO - Number of items: 147
+2024-12-06 09:35:41,150 - global_logger - INFO - ----------------------------------------------------------------------------------------------------
+2024-12-06 09:35:41,150 - global_logger - INFO - Scraping page 9/13...
+2024-12-06 09:35:41,151 - global_logger - INFO - Skipping download: axius\page_9.html already exists.
+2024-12-06 09:35:41,225 - global_logger - INFO - Number of items: 147
+2024-12-06 09:35:41,225 - global_logger - INFO - ----------------------------------------------------------------------------------------------------
+2024-12-06 09:35:41,225 - global_logger - INFO - Scraping page 10/13...
+2024-12-06 09:35:41,226 - global_logger - INFO - Skipping download: axius\page_10.html already exists.
+2024-12-06 09:35:41,285 - global_logger - INFO - Number of items: 147
+2024-12-06 09:35:41,293 - global_logger - INFO - ----------------------------------------------------------------------------------------------------
+2024-12-06 09:35:41,293 - global_logger - INFO - Scraping page 11/13...
+2024-12-06 09:35:41,293 - global_logger - INFO - Skipping download: axius\page_11.html already exists.
+2024-12-06 09:35:41,363 - global_logger - INFO - Number of items: 147
+2024-12-06 09:35:41,363 - global_logger - INFO - ----------------------------------------------------------------------------------------------------
+2024-12-06 09:35:41,363 - global_logger - INFO - Scraping page 12/13...
+2024-12-06 09:35:41,363 - global_logger - INFO - Skipping download: axius\page_12.html already exists.
+2024-12-06 09:35:41,436 - global_logger - INFO - Number of items: 147
+2024-12-06 09:35:41,437 - global_logger - INFO - ----------------------------------------------------------------------------------------------------
+2024-12-06 09:35:41,437 - global_logger - INFO - Scraping page 13/13...
+2024-12-06 09:35:41,438 - global_logger - INFO - Skipping download: axius\page_13.html already exists.
+2024-12-06 09:35:41,485 - global_logger - INFO - Number of items: 147
+2024-12-06 09:35:43,606 - global_logger - INFO - 147 new properties are available. Sending email...
+2024-12-06 09:35:45,863 - global_logger - INFO - Correo enviado con éxito
+2024-12-06 09:37:01,143 - global_logger - INFO - Initialized a fresh new_properties file at axius/new_properties.pkl.
+2024-12-06 09:37:04,359 - global_logger - INFO - Skipping download: axius\page_1.html already exists.
+2024-12-06 09:37:04,412 - global_logger - INFO - Total Properties: 147
+2024-12-06 09:37:04,413 - global_logger - INFO - ----------------------------------------------------------------------------------------------------
+2024-12-06 09:37:04,413 - global_logger - INFO - Scraping page 1/13...
+2024-12-06 09:37:04,413 - global_logger - INFO - Skipping download: axius\page_1.html already exists.
+2024-12-06 09:37:04,475 - global_logger - INFO - Number of items: 147
+2024-12-06 09:37:04,475 - global_logger - INFO - ----------------------------------------------------------------------------------------------------
+2024-12-06 09:37:04,475 - global_logger - INFO - Scraping page 2/13...
+2024-12-06 09:37:04,475 - global_logger - INFO - Skipping download: axius\page_2.html already exists.
+2024-12-06 09:37:04,557 - global_logger - INFO - Number of items: 147
+2024-12-06 09:37:04,557 - global_logger - INFO - ----------------------------------------------------------------------------------------------------
+2024-12-06 09:37:04,557 - global_logger - INFO - Scraping page 3/13...
+2024-12-06 09:37:04,557 - global_logger - INFO - Skipping download: axius\page_3.html already exists.
+2024-12-06 09:37:04,627 - global_logger - INFO - Number of items: 147
+2024-12-06 09:37:04,627 - global_logger - INFO - ----------------------------------------------------------------------------------------------------
+2024-12-06 09:37:04,627 - global_logger - INFO - Scraping page 4/13...
+2024-12-06 09:37:04,627 - global_logger - INFO - Skipping download: axius\page_4.html already exists.
+2024-12-06 09:37:04,705 - global_logger - INFO - Number of items: 147
+2024-12-06 09:37:04,706 - global_logger - INFO - ----------------------------------------------------------------------------------------------------
+2024-12-06 09:37:04,707 - global_logger - INFO - Scraping page 5/13...
+2024-12-06 09:37:04,707 - global_logger - INFO - Skipping download: axius\page_5.html already exists.
+2024-12-06 09:37:04,844 - global_logger - INFO - Number of items: 147
+2024-12-06 09:37:04,844 - global_logger - INFO - ----------------------------------------------------------------------------------------------------
+2024-12-06 09:37:04,844 - global_logger - INFO - Scraping page 6/13...
+2024-12-06 09:37:04,844 - global_logger - INFO - Skipping download: axius\page_6.html already exists.
+2024-12-06 09:37:04,911 - global_logger - INFO - Number of items: 147
+2024-12-06 09:37:04,911 - global_logger - INFO - ----------------------------------------------------------------------------------------------------
+2024-12-06 09:37:04,911 - global_logger - INFO - Scraping page 7/13...
+2024-12-06 09:37:04,911 - global_logger - INFO - Skipping download: axius\page_7.html already exists.
+2024-12-06 09:37:04,981 - global_logger - INFO - Number of items: 147
+2024-12-06 09:37:04,981 - global_logger - INFO - ----------------------------------------------------------------------------------------------------
+2024-12-06 09:37:04,985 - global_logger - INFO - Scraping page 8/13...
+2024-12-06 09:37:04,986 - global_logger - INFO - Skipping download: axius\page_8.html already exists.
+2024-12-06 09:37:05,057 - global_logger - INFO - Number of items: 147
+2024-12-06 09:37:05,057 - global_logger - INFO - ----------------------------------------------------------------------------------------------------
+2024-12-06 09:37:05,058 - global_logger - INFO - Scraping page 9/13...
+2024-12-06 09:37:05,058 - global_logger - INFO - Skipping download: axius\page_9.html already exists.
+2024-12-06 09:37:05,128 - global_logger - INFO - Number of items: 147
+2024-12-06 09:37:05,128 - global_logger - INFO - ----------------------------------------------------------------------------------------------------
+2024-12-06 09:37:05,128 - global_logger - INFO - Scraping page 10/13...
+2024-12-06 09:37:05,129 - global_logger - INFO - Skipping download: axius\page_10.html already exists.
+2024-12-06 09:37:05,198 - global_logger - INFO - Number of items: 147
+2024-12-06 09:37:05,198 - global_logger - INFO - ----------------------------------------------------------------------------------------------------
+2024-12-06 09:37:05,198 - global_logger - INFO - Scraping page 11/13...
+2024-12-06 09:37:05,198 - global_logger - INFO - Skipping download: axius\page_11.html already exists.
+2024-12-06 09:37:05,272 - global_logger - INFO - Number of items: 147
+2024-12-06 09:37:05,272 - global_logger - INFO - ----------------------------------------------------------------------------------------------------
+2024-12-06 09:37:05,274 - global_logger - INFO - Scraping page 12/13...
+2024-12-06 09:37:05,274 - global_logger - INFO - Skipping download: axius\page_12.html already exists.
+2024-12-06 09:37:05,340 - global_logger - INFO - Number of items: 147
+2024-12-06 09:37:05,340 - global_logger - INFO - ----------------------------------------------------------------------------------------------------
+2024-12-06 09:37:05,340 - global_logger - INFO - Scraping page 13/13...
+2024-12-06 09:37:05,340 - global_logger - INFO - Skipping download: axius\page_13.html already exists.
+2024-12-06 09:37:05,384 - global_logger - INFO - Number of items: 147
+2024-12-06 09:37:07,485 - global_logger - INFO - 147 new properties are available. Sending email...
+2024-12-06 09:37:07,488 - global_logger - INFO - SEND_EMAILS is set on False to avois spaming, email won't be sent

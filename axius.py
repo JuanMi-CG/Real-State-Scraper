@@ -10,6 +10,9 @@ from selenium.webdriver.support import expected_conditions as EC
 from bs4 import BeautifulSoup
 from webdriver_manager.chrome import ChromeDriverManager
 
+import time_lapse
+import email_tools
+
 from clogger import logger
 
 
@@ -206,11 +209,11 @@ def scrape_all_pages(base_url, page_template, output_dir, main_pickle_file, new_
 
 
 
+def scrap_axius(folder_name, sender_email, receiver_email, password):
+    properties_path = f'{folder_name}/properties.pkl'
+    new_properties_path = f'{folder_name}/new_properties.pkl'
+    # ----------------------- SCRAPPING ------------------------------------ 
 
-def scrap_axius():
-    output_directory = "axius"
-    main_pickle_file_path = os.path.join(output_directory, "properties.pkl")
-    new_pickle_file_path = os.path.join(output_directory, "new_properties.pkl")
     first_page_url = "https://arxus.es/propiedades/?TipoOperacion=Venta&Precio2=50000"
     page_url_template = "https://arxus.es/propiedades/?TipoOperacion=Venta&Precio2=50000&pagina={page}"
     items_per_page = 12
@@ -218,8 +221,8 @@ def scrap_axius():
     scrape_all_pages(
         base_url=first_page_url,
         page_template=page_url_template,
-        output_dir=output_directory,
-        main_pickle_file=main_pickle_file_path,
-        new_pickle_file=new_pickle_file_path,
+        output_dir=folder_name,
+        main_pickle_file=properties_path,
+        new_pickle_file=new_properties_path,
         items_per_page=items_per_page,
     )
