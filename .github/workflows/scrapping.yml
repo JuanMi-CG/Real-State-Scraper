@@ -2,8 +2,7 @@ name: Do Scrap of the axius website
 
 on:
   schedule:
-    # - cron: "*/5 * * * *"
-    - cron: "0 0 * * *" # Runs at midnight every day
+    - cron: "0 14 * * *"
   push:
     branches:
       - main
@@ -48,6 +47,7 @@ jobs:
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git add last_sent_email.txt
+          git add axius/properties.pkl
           git commit -m "Scrap done: $(date)"
           git push
         env:
