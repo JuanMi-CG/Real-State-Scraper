@@ -29,24 +29,55 @@ def initialize_driver():
     service = Service(ChromeDriverManager().install())
     return webdriver.Chrome(service=service, options=options)
 
-
-def save_html(driver, url, output_file):
-    """Save the HTML content of a URL to a local file."""
+def save_html(driver, url, output_file, max_retries=2, wait_until=None, wait_timeout=10):
     if os.path.exists(output_file):
         logger.info(f"Skipping download: {output_file} already exists.")
         return
 
-    try:
-        time.sleep(random.uniform(1, 5))
-        driver.get(url)
-        WebDriverWait(driver, 10).until(
-            EC.presence_of_element_located((By.CLASS_NAME, "mh-estate-vertical__primary"))
-        )
-        with open(output_file, "w", encoding="utf-8") as file:
-            file.write(driver.page_source)
-        logger.info(f"HTML saved to {output_file}.")
-    except Exception as e:
-        logger.error(f"Error accessing {url}: {e}")
+    retries = 0
+    while retries < max_retries:
+        try:
+            time.sleep(random.uniform(2, 5))
+            logger.info(f'Entrando en la web: {url}')
+            driver.get(url)
+
+            # If there's a wait condition, apply it
+            if wait_until:
+                WebDriverWait(driver, wait_timeout).until(wait_until)
+
+            # Save the HTML content
+            with open(output_file, "w", encoding="utf-8") as file:
+                file.write(driver.page_source)
+
+            # Check if the file has content
+            if os.path.getsize(output_file) > 0:
+                logger.info(f"HTML saved to {output_file}.")
+                return
+            else:
+                logger.warning(f"Empty HTML content for {url}. Retrying...")
+                retries += 1
+
+        except Exception as e:
+            logger.error(f"Error accessing {url} on attempt {retries + 1}: {e}")
+            retries += 1
+
+    logger.error(f"Failed to save non-empty HTML content for {url} after {max_retries} retries.")
+
+# def save_html(driver, url, output_file):
+#     """Save the HTML content of a URL to a local file."""
+#     if os.path.exists(output_file):
+#         logger.info(f"Skipping download: {output_file} already exists.")
+#         return
+
+#     try:
+#         time.sleep(random.uniform(2, 5))
+#         print(f'Entrando en la web: {url}')
+#         driver.get(url)
+#         with open(output_file, "w", encoding="utf-8") as file:
+#             file.write(driver.page_source)
+#         logger.info(f"HTML saved to {output_file}.")
+#     except Exception as e:
+#         logger.error(f"Error accessing {url}: {e}")
 
 
 def load_or_initialize_pickle(file_path, columns):

@@ -17,12 +17,11 @@ password = os.environ["EMAIL_PASS"]
 COLUMNS = ["ref", "price", "url", "inmobiliaria"]
 
 
-# --------------------------------- EJECUCIÓN PRINCIPAL
 # Initialize the 'new_properties.pkl' as an empty DataFrame
 new_properties = 'results/new_properties.pkl'
 properties = 'results/properties.pkl'
 
-
+# --------------------------------- EJECUCIÓN PRINCIPAL
 empty_df = pd.DataFrame(columns=COLUMNS)
 cscrap.save_to_pickle(empty_df, new_properties)
 logger.info(f"Initialized a fresh new_properties file at {new_properties}.")

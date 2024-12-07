@@ -3,5 +3,6 @@
 __pycache__
 venv
 
+results/new_properties.pkl
 axius/*
 inmocasal/*

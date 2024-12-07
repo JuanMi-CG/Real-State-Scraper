@@ -2,6 +2,8 @@ import os
 import math
 import pandas as pd
 from bs4 import BeautifulSoup
+from selenium.webdriver.common.by import By
+from selenium.webdriver.support import expected_conditions as EC
 
 from ctools.clogger import logger
 from ctools import cscrap
@@ -82,7 +84,8 @@ def extract_data_from_html(html_file):
 
 def process_page(driver, url, html_file, pickle_file, new_pickle_file):
     """Process a single page and update the main and new properties pickle files."""
-    cscrap.save_html(driver, url, html_file)
+    condition = EC.presence_of_element_located((By.CLASS_NAME, "mh-estate-vertical__primary"))
+    cscrap.save_html(driver, url, html_file, wait_until=condition)
     extracted_data = extract_data_from_html(html_file)
 
     # Load existing data
@@ -109,7 +112,8 @@ def process_page(driver, url, html_file, pickle_file, new_pickle_file):
 
 def get_total_items(driver, url, output_dir):
     html_file = os.path.join(output_dir, f"page_1.html")
-    cscrap.save_html(driver, url, html_file)
+    condition = EC.presence_of_element_located((By.CLASS_NAME, "mh-search__results"))
+    cscrap.save_html(driver, url, html_file, wait_until=condition)
 
     try:
         with open(html_file, "r", encoding="utf-8") as file:
@@ -126,7 +130,6 @@ def get_total_items(driver, url, output_dir):
         return 0
 
 
-
 def scrape_all_pages(base_url, page_template, output_dir, main_pickle_file, new_pickle_file, items_per_page):
     """Scrape multiple pages and consolidate the data, starting with a new 'new_properties.pkl'."""
     os.makedirs(output_dir, exist_ok=True)
@@ -136,16 +139,43 @@ def scrape_all_pages(base_url, page_template, output_dir, main_pickle_file, new_
         total_items = get_total_items(driver, base_url, output_dir)
         logger.info(f'Total Properties: {total_items}')
         total_pages = math.ceil(total_items / items_per_page)
-        for page in range(total_pages):
-            url = base_url if page == 0 else page_template.format(page=page)
-            html_file = os.path.join(output_dir, f"page_{page + 1}.html")
-            logger.info('-'*100)
-            logger.info(f"Scraping page {page + 1}/{total_pages}...")
+        
+        for page in range(1, total_pages + 1):
+            if page == 1:
+                url = base_url  # First page uses the base URL
+            else:
+                url = page_template.format(page=page - 1)  # Adjust for correct page numbering
+            
+            html_file = os.path.join(output_dir, f"page_{page}.html")
+            logger.info('-' * 100)
+            logger.info(f"Scraping page {page}/{total_pages}...")
+            
             process_page(driver, url, html_file, main_pickle_file, new_pickle_file)
     except Exception as e:
         logger.info(f'Excepcion: {e}')
     finally:
         driver.quit()
+
+
+# def scrape_all_pages(base_url, page_template, output_dir, main_pickle_file, new_pickle_file, items_per_page):
+#     """Scrape multiple pages and consolidate the data, starting with a new 'new_properties.pkl'."""
+#     os.makedirs(output_dir, exist_ok=True)
+
+#     driver = cscrap.initialize_driver()
+#     try:
+#         total_items = get_total_items(driver, base_url, output_dir)
+#         logger.info(f'Total Properties: {total_items}')
+#         total_pages = math.ceil(total_items / items_per_page)
+#         for page in range(total_pages):
+#             url = base_url if page == 0 else page_template.format(page=page)
+#             html_file = os.path.join(output_dir, f"page_{page + 1}.html")
+#             logger.info('-'*100)
+#             logger.info(f"Scraping page {page + 1}/{total_pages}...")
+#             process_page(driver, url, html_file, main_pickle_file, new_pickle_file)
+#     except Exception as e:
+#         logger.info(f'Excepcion: {e}')
+#     finally:
+#         driver.quit()
 
 
 
