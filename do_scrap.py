@@ -6,8 +6,8 @@ from ctools import cscrap
 from ctools import email_tools
 
 # # Load environment variables from .env file for local testing
-from dotenv import load_dotenv
-load_dotenv(override=True)
+# from dotenv import load_dotenv
+# load_dotenv(override=True)
 
 # EMAIL Config
 sender_email = os.environ["EMAIL_USER"]
