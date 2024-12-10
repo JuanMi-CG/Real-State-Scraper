@@ -572,3 +572,175 @@ Index: []
 Columns: [ref, price, url, inmobiliaria]
 Index: []
 2024-12-09 14:03:57,197 - scrap_logging - INFO - No new properties are available. Email won't be sent.
+2024-12-10 14:00:40,150 - scrap_logging - INFO - Initialized a fresh new_properties file at results/new_properties.pkl.
+2024-12-10 14:01:04,478 - scrap_logging - INFO - Entrando en la web: https://arxus.es/propiedades/?TipoOperacion=Venta&Precio2=50000
+2024-12-10 14:01:09,359 - scrap_logging - INFO - HTML saved to axius/page_1.html.
+2024-12-10 14:01:09,436 - scrap_logging - INFO - Total Properties: 146
+2024-12-10 14:01:09,436 - scrap_logging - INFO - ----------------------------------------------------------------------------------------------------
+2024-12-10 14:01:09,436 - scrap_logging - INFO - Scraping page 1/13...
+2024-12-10 14:01:09,436 - scrap_logging - INFO - Skipping download: axius/page_1.html already exists.
+2024-12-10 14:01:09,534 - scrap_logging - INFO - Number of items: 227
+2024-12-10 14:01:09,534 - scrap_logging - INFO - ----------------------------------------------------------------------------------------------------
+2024-12-10 14:01:09,534 - scrap_logging - INFO - Scraping page 2/13...
+2024-12-10 14:01:14,477 - scrap_logging - INFO - Entrando en la web: https://arxus.es/propiedades/?TipoOperacion=Venta&Precio2=50000&pagina=1
+2024-12-10 14:01:16,508 - scrap_logging - INFO - HTML saved to axius/page_2.html.
+2024-12-10 14:01:16,586 - scrap_logging - INFO - Number of items: 227
+2024-12-10 14:01:16,587 - scrap_logging - INFO - ----------------------------------------------------------------------------------------------------
+2024-12-10 14:01:16,587 - scrap_logging - INFO - Scraping page 3/13...
+2024-12-10 14:01:19,324 - scrap_logging - INFO - Entrando en la web: https://arxus.es/propiedades/?TipoOperacion=Venta&Precio2=50000&pagina=2
+2024-12-10 14:01:21,318 - scrap_logging - INFO - HTML saved to axius/page_3.html.
+2024-12-10 14:01:21,397 - scrap_logging - INFO - Number of items: 227
+2024-12-10 14:01:21,397 - scrap_logging - INFO - ----------------------------------------------------------------------------------------------------
+2024-12-10 14:01:21,397 - scrap_logging - INFO - Scraping page 4/13...
+2024-12-10 14:01:25,070 - scrap_logging - INFO - Entrando en la web: https://arxus.es/propiedades/?TipoOperacion=Venta&Precio2=50000&pagina=3
+2024-12-10 14:01:27,018 - scrap_logging - INFO - HTML saved to axius/page_4.html.
+2024-12-10 14:01:27,099 - scrap_logging - INFO - Number of items: 227
+2024-12-10 14:01:27,099 - scrap_logging - INFO - ----------------------------------------------------------------------------------------------------
+2024-12-10 14:01:27,099 - scrap_logging - INFO - Scraping page 5/13...
+2024-12-10 14:01:30,497 - scrap_logging - INFO - Entrando en la web: https://arxus.es/propiedades/?TipoOperacion=Venta&Precio2=50000&pagina=4
+2024-12-10 14:01:32,466 - scrap_logging - INFO - HTML saved to axius/page_5.html.
+2024-12-10 14:01:32,559 - scrap_logging - INFO - Number of items: 227
+2024-12-10 14:01:32,559 - scrap_logging - INFO - ----------------------------------------------------------------------------------------------------
+2024-12-10 14:01:32,559 - scrap_logging - INFO - Scraping page 6/13...
+2024-12-10 14:01:35,371 - scrap_logging - INFO - Entrando en la web: https://arxus.es/propiedades/?TipoOperacion=Venta&Precio2=50000&pagina=5
+2024-12-10 14:01:37,276 - scrap_logging - INFO - HTML saved to axius/page_6.html.
+2024-12-10 14:01:37,351 - scrap_logging - INFO - Number of items: 227
+2024-12-10 14:01:37,351 - scrap_logging - INFO - ----------------------------------------------------------------------------------------------------
+2024-12-10 14:01:37,351 - scrap_logging - INFO - Scraping page 7/13...
+2024-12-10 14:01:40,541 - scrap_logging - INFO - Entrando en la web: https://arxus.es/propiedades/?TipoOperacion=Venta&Precio2=50000&pagina=6
+2024-12-10 14:01:42,434 - scrap_logging - INFO - HTML saved to axius/page_7.html.
+2024-12-10 14:01:42,509 - scrap_logging - INFO - Number of items: 227
+2024-12-10 14:01:42,509 - scrap_logging - INFO - ----------------------------------------------------------------------------------------------------
+2024-12-10 14:01:42,510 - scrap_logging - INFO - Scraping page 8/13...
+2024-12-10 14:01:45,315 - scrap_logging - INFO - Entrando en la web: https://arxus.es/propiedades/?TipoOperacion=Venta&Precio2=50000&pagina=7
+2024-12-10 14:01:47,056 - scrap_logging - INFO - HTML saved to axius/page_8.html.
+2024-12-10 14:01:47,254 - scrap_logging - INFO - Number of items: 227
+2024-12-10 14:01:47,254 - scrap_logging - INFO - ----------------------------------------------------------------------------------------------------
+2024-12-10 14:01:47,254 - scrap_logging - INFO - Scraping page 9/13...
+2024-12-10 14:01:50,438 - scrap_logging - INFO - Entrando en la web: https://arxus.es/propiedades/?TipoOperacion=Venta&Precio2=50000&pagina=8
+2024-12-10 14:01:52,356 - scrap_logging - INFO - HTML saved to axius/page_9.html.
+2024-12-10 14:01:52,442 - scrap_logging - INFO - Number of items: 227
+2024-12-10 14:01:52,442 - scrap_logging - INFO - ----------------------------------------------------------------------------------------------------
+2024-12-10 14:01:52,442 - scrap_logging - INFO - Scraping page 10/13...
+2024-12-10 14:01:56,117 - scrap_logging - INFO - Entrando en la web: https://arxus.es/propiedades/?TipoOperacion=Venta&Precio2=50000&pagina=9
+2024-12-10 14:01:58,176 - scrap_logging - INFO - HTML saved to axius/page_10.html.
+2024-12-10 14:01:58,250 - scrap_logging - INFO - Number of items: 227
+2024-12-10 14:01:58,250 - scrap_logging - INFO - ----------------------------------------------------------------------------------------------------
+2024-12-10 14:01:58,251 - scrap_logging - INFO - Scraping page 11/13...
+2024-12-10 14:02:01,438 - scrap_logging - INFO - Entrando en la web: https://arxus.es/propiedades/?TipoOperacion=Venta&Precio2=50000&pagina=10
+2024-12-10 14:02:12,025 - scrap_logging - ERROR - Error accessing https://arxus.es/propiedades/?TipoOperacion=Venta&Precio2=50000&pagina=10 on attempt 1: Message: 
+Stacktrace:
+#0 0x5606e6d2734a <unknown>
+#1 0x5606e683d6e0 <unknown>
+#2 0x5606e688c3e6 <unknown>
+#3 0x5606e688c681 <unknown>
+#4 0x5606e68d1b04 <unknown>
+#5 0x5606e68b048d <unknown>
+#6 0x5606e68ceed7 <unknown>
+#7 0x5606e68b0203 <unknown>
+#8 0x5606e687ecc0 <unknown>
+#9 0x5606e687fc9e <unknown>
+#10 0x5606e6cf4d3b <unknown>
+#11 0x5606e6cf8cc2 <unknown>
+#12 0x5606e6ce1b6c <unknown>
+#13 0x5606e6cf9837 <unknown>
+#14 0x5606e6cc710f <unknown>
+#15 0x5606e6d165a8 <unknown>
+#16 0x5606e6d16770 <unknown>
+#17 0x5606e6d261c6 <unknown>
+#18 0x7f32d6a94ac3 <unknown>
+
+2024-12-10 14:02:15,168 - scrap_logging - INFO - Entrando en la web: https://arxus.es/propiedades/?TipoOperacion=Venta&Precio2=50000&pagina=10
+2024-12-10 14:02:17,174 - scrap_logging - INFO - HTML saved to axius/page_11.html.
+2024-12-10 14:02:17,244 - scrap_logging - INFO - Number of items: 227
+2024-12-10 14:02:17,244 - scrap_logging - INFO - ----------------------------------------------------------------------------------------------------
+2024-12-10 14:02:17,244 - scrap_logging - INFO - Scraping page 12/13...
+2024-12-10 14:02:20,185 - scrap_logging - INFO - Entrando en la web: https://arxus.es/propiedades/?TipoOperacion=Venta&Precio2=50000&pagina=11
+2024-12-10 14:02:22,377 - scrap_logging - INFO - HTML saved to axius/page_12.html.
+2024-12-10 14:02:22,447 - scrap_logging - INFO - Number of items: 227
+2024-12-10 14:02:22,447 - scrap_logging - INFO - ----------------------------------------------------------------------------------------------------
+2024-12-10 14:02:22,447 - scrap_logging - INFO - Scraping page 13/13...
+2024-12-10 14:02:27,221 - scrap_logging - INFO - Entrando en la web: https://arxus.es/propiedades/?TipoOperacion=Venta&Precio2=50000&pagina=12
+2024-12-10 14:02:28,759 - scrap_logging - INFO - HTML saved to axius/page_13.html.
+2024-12-10 14:02:28,827 - scrap_logging - INFO - Number of items: 227
+2024-12-10 14:02:28,955 - scrap_logging - INFO -             ref  ... inmobiliaria
+0        743815  ...        axius
+1    LF00004379  ...    inmocasal
+2    LV00002313  ...    inmocasal
+3    LF00004343  ...    inmocasal
+4    LF00004305  ...    inmocasal
+..          ...  ...          ...
+222     IQ02336  ...        axius
+223      106212  ...        axius
+224       94035  ...        axius
+225       80481  ...        axius
+226         753  ...        axius
+
+[227 rows x 4 columns]
+2024-12-10 14:02:31,948 - scrap_logging - INFO - Entrando en la web: https://www.inmocasal.es/busqueda-avanzada/?gestion=comprar&propiedad=6&area=5&precioMax=75000&ordenar=1&pagina=1
+2024-12-10 14:02:37,658 - scrap_logging - INFO - HTML saved to inmocasal/page_1.html.
+2024-12-10 14:02:37,901 - scrap_logging - INFO - Número de páginas: 9
+2024-12-10 14:02:37,902 - scrap_logging - INFO - Total Properties: 9
+2024-12-10 14:02:37,902 - scrap_logging - INFO - ----------------------------------------------------------------------------------------------------
+2024-12-10 14:02:37,902 - scrap_logging - INFO - Scraping page 1/9...
+2024-12-10 14:02:37,903 - scrap_logging - INFO - Skipping download: inmocasal/page_1.html already exists.
+2024-12-10 14:02:38,037 - scrap_logging - INFO - Number of items: 227
+2024-12-10 14:02:38,037 - scrap_logging - INFO - ----------------------------------------------------------------------------------------------------
+2024-12-10 14:02:38,037 - scrap_logging - INFO - Scraping page 2/9...
+2024-12-10 14:02:42,065 - scrap_logging - INFO - Entrando en la web: https://www.inmocasal.es/busqueda-avanzada/?gestion=comprar&propiedad=6&area=5&precioMax=75000&ordenar=1&pagina=1
+2024-12-10 14:02:46,986 - scrap_logging - INFO - HTML saved to inmocasal/page_2.html.
+2024-12-10 14:02:47,341 - scrap_logging - INFO - Number of items: 227
+2024-12-10 14:02:47,342 - scrap_logging - INFO - ----------------------------------------------------------------------------------------------------
+2024-12-10 14:02:47,343 - scrap_logging - INFO - Scraping page 3/9...
+2024-12-10 14:02:49,396 - scrap_logging - INFO - Entrando en la web: https://www.inmocasal.es/busqueda-avanzada/?gestion=comprar&propiedad=6&area=5&precioMax=75000&ordenar=1&pagina=2
+2024-12-10 14:02:53,829 - scrap_logging - INFO - HTML saved to inmocasal/page_3.html.
+2024-12-10 14:02:53,917 - scrap_logging - INFO - Number of items: 227
+2024-12-10 14:02:53,917 - scrap_logging - INFO - ----------------------------------------------------------------------------------------------------
+2024-12-10 14:02:53,917 - scrap_logging - INFO - Scraping page 4/9...
+2024-12-10 14:02:56,852 - scrap_logging - INFO - Entrando en la web: https://www.inmocasal.es/busqueda-avanzada/?gestion=comprar&propiedad=6&area=5&precioMax=75000&ordenar=1&pagina=3
+2024-12-10 14:03:01,065 - scrap_logging - INFO - HTML saved to inmocasal/page_4.html.
+2024-12-10 14:03:01,152 - scrap_logging - INFO - Number of items: 227
+2024-12-10 14:03:01,153 - scrap_logging - INFO - ----------------------------------------------------------------------------------------------------
+2024-12-10 14:03:01,153 - scrap_logging - INFO - Scraping page 5/9...
+2024-12-10 14:03:05,358 - scrap_logging - INFO - Entrando en la web: https://www.inmocasal.es/busqueda-avanzada/?gestion=comprar&propiedad=6&area=5&precioMax=75000&ordenar=1&pagina=4
+2024-12-10 14:03:09,360 - scrap_logging - INFO - HTML saved to inmocasal/page_5.html.
+2024-12-10 14:03:09,448 - scrap_logging - INFO - Number of items: 227
+2024-12-10 14:03:09,448 - scrap_logging - INFO - ----------------------------------------------------------------------------------------------------
+2024-12-10 14:03:09,448 - scrap_logging - INFO - Scraping page 6/9...
+2024-12-10 14:03:13,613 - scrap_logging - INFO - Entrando en la web: https://www.inmocasal.es/busqueda-avanzada/?gestion=comprar&propiedad=6&area=5&precioMax=75000&ordenar=1&pagina=5
+2024-12-10 14:03:17,845 - scrap_logging - INFO - HTML saved to inmocasal/page_6.html.
+2024-12-10 14:03:17,930 - scrap_logging - INFO - Number of items: 227
+2024-12-10 14:03:17,931 - scrap_logging - INFO - ----------------------------------------------------------------------------------------------------
+2024-12-10 14:03:17,931 - scrap_logging - INFO - Scraping page 7/9...
+2024-12-10 14:03:20,857 - scrap_logging - INFO - Entrando en la web: https://www.inmocasal.es/busqueda-avanzada/?gestion=comprar&propiedad=6&area=5&precioMax=75000&ordenar=1&pagina=6
+2024-12-10 14:03:24,910 - scrap_logging - INFO - HTML saved to inmocasal/page_7.html.
+2024-12-10 14:03:24,996 - scrap_logging - INFO - Number of items: 227
+2024-12-10 14:03:24,996 - scrap_logging - INFO - ----------------------------------------------------------------------------------------------------
+2024-12-10 14:03:24,996 - scrap_logging - INFO - Scraping page 8/9...
+2024-12-10 14:03:29,244 - scrap_logging - INFO - Entrando en la web: https://www.inmocasal.es/busqueda-avanzada/?gestion=comprar&propiedad=6&area=5&precioMax=75000&ordenar=1&pagina=7
+2024-12-10 14:03:33,300 - scrap_logging - INFO - HTML saved to inmocasal/page_8.html.
+2024-12-10 14:03:33,439 - scrap_logging - INFO - Number of items: 227
+2024-12-10 14:03:33,439 - scrap_logging - INFO - ----------------------------------------------------------------------------------------------------
+2024-12-10 14:03:33,439 - scrap_logging - INFO - Scraping page 9/9...
+2024-12-10 14:03:37,812 - scrap_logging - INFO - Entrando en la web: https://www.inmocasal.es/busqueda-avanzada/?gestion=comprar&propiedad=6&area=5&precioMax=75000&ordenar=1&pagina=8
+2024-12-10 14:03:41,602 - scrap_logging - INFO - HTML saved to inmocasal/page_9.html.
+2024-12-10 14:03:41,819 - scrap_logging - INFO - Number of items: 227
+2024-12-10 14:03:41,953 - scrap_logging - INFO -             ref  ... inmobiliaria
+0        743815  ...        axius
+1         08235  ...        axius
+2         08234  ...        axius
+3         08211  ...        axius
+4         08200  ...        axius
+..          ...  ...          ...
+222  LV00001651  ...    inmocasal
+223  LV00001657  ...    inmocasal
+224  LV00001654  ...    inmocasal
+225  LV00001659  ...    inmocasal
+226  OV00005159  ...    inmocasal
+
+[227 rows x 4 columns]
+2024-12-10 14:03:41,963 - scrap_logging - INFO - ----------------------------------------------------------------------------------------------------
+2024-12-10 14:03:41,964 - scrap_logging - INFO - Empty DataFrame
+Columns: [ref, price, url, inmobiliaria]
+Index: []
+2024-12-10 14:03:41,965 - scrap_logging - INFO - No new properties are available. Email won't be sent.
