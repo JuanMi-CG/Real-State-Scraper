@@ -9,7 +9,7 @@ from ctools import time_lapse
 from ctools.clogger import logger
 
 
-SEND_EMAILS = (os.getenv('SEND_EMAILS', 'false') == 'true')
+SEND_EMAILS = True
 
 
 def emailing(df, new_properties_path, sender_email, receiver_email, password):
@@ -102,7 +102,7 @@ def send_email(sender_email, receiver_email, password, subject, body):
         except Exception as e:
             logger.error(f"Error al enviar el correo: {e}")
     else:
-        logger.info("Email would be sent but SEND_EMAILS is set on False to avois spaming, email won't be sent")
+        logger.info("Email would be sent but SEND_EMAILS is set on False to avoid spaming, email won't be sent")
 
 
 def send_health_reminder(sender_email, receiver_email, password, last_email_days):
