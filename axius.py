@@ -157,36 +157,14 @@ def scrape_all_pages(base_url, page_template, output_dir, main_pickle_file, new_
         driver.quit()
 
 
-# def scrape_all_pages(base_url, page_template, output_dir, main_pickle_file, new_pickle_file, items_per_page):
-#     """Scrape multiple pages and consolidate the data, starting with a new 'new_properties.pkl'."""
-#     os.makedirs(output_dir, exist_ok=True)
-
-#     driver = cscrap.initialize_driver()
-#     try:
-#         total_items = get_total_items(driver, base_url, output_dir)
-#         logger.info(f'Total Properties: {total_items}')
-#         total_pages = math.ceil(total_items / items_per_page)
-#         for page in range(total_pages):
-#             url = base_url if page == 0 else page_template.format(page=page)
-#             html_file = os.path.join(output_dir, f"page_{page + 1}.html")
-#             logger.info('-'*100)
-#             logger.info(f"Scraping page {page + 1}/{total_pages}...")
-#             process_page(driver, url, html_file, main_pickle_file, new_pickle_file)
-#     except Exception as e:
-#         logger.info(f'Excepcion: {e}')
-#     finally:
-#         driver.quit()
-
-
-
-
 def scrap(folder_name):
     properties_path = 'results/properties.pkl'
     new_properties_path = 'results/new_properties.pkl'
     # ----------------------- SCRAPPING ------------------------------------ 
 
-    first_page_url = "https://arxus.es/propiedades/?TipoOperacion=Venta&Precio2=50000"
-    page_url_template = "https://arxus.es/propiedades/?TipoOperacion=Venta&Precio2=50000&pagina={page}"
+    # Scrapping PISOS
+    first_page_url = "https://arxus.es/propiedades/?TipoOperacion=Venta&Precio2=50000&Tipo[]=Casas+o+chalets&Tipo[]=Pisos"
+    page_url_template = "https://arxus.es/propiedades/?TipoOperacion=Venta&Precio2=50000&Tipo[]=Casas+o+chalets&Tipo[]=Pisos&pagina={page}"
     items_per_page = 12
 
     scrape_all_pages(

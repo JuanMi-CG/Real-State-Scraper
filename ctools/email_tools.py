@@ -10,6 +10,7 @@ from ctools.clogger import logger
 
 
 SEND_EMAILS = True
+HEALTH_EMAIL_SEND_INTERVAL_DAYS=2
 
 
 def emailing(df, new_properties_path, sender_email, receiver_email, password):
@@ -20,7 +21,7 @@ def emailing(df, new_properties_path, sender_email, receiver_email, password):
         send_email(sender_email, receiver_email, password, subject, body)
     else:
         last_email_days = time_lapse.days_since_last_email()
-        if last_email_days > 7:
+        if last_email_days > HEALTH_EMAIL_SEND_INTERVAL_DAYS:
             send_health_reminder(sender_email, receiver_email, password, last_email_days)
         else:
             logger.info("No new properties are available. Email won't be sent.")

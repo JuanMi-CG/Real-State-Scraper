@@ -135,20 +135,47 @@ def scrape_all_pages(base_url, page_template, output_dir, main_pickle_file, new_
 
 
 
-
 def scrap(folder_name):
     properties_path = 'results/properties.pkl'
     new_properties_path = 'results/new_properties.pkl'
-    # ----------------------- SCRAPPING ------------------------------------ 
+    
+    # Define the areas and propiedades to iterate over
+    areas = [3, 4, 5]
+    propiedades = [2, 6]
 
-    first_page_url = "https://www.inmocasal.es/busqueda-avanzada/?gestion=comprar&propiedad=6&area=5&precioMax=75000&ordenar=1&pagina=1"
-    page_url_template = "https://www.inmocasal.es/busqueda-avanzada/?gestion=comprar&propiedad=6&area=5&precioMax=75000&ordenar=1&pagina={page}"
+    # Loop through all combinations of areas and propiedades
+    for area in areas:
+        for propiedad in propiedades:
+            first_page_url = f"https://www.inmocasal.es/busqueda-avanzada/?gestion=comprar&propiedad={propiedad}&area={area}&precioMax=75000&ordenar=1&pagina=1"
+            page_url_template = f"https://www.inmocasal.es/busqueda-avanzada/?gestion=comprar&propiedad={propiedad}&area={area}&precioMax=75000&ordenar=1&pagina={{page}}"
+
+            # Call the scraping function for each combination
+            scrape_all_pages(
+                base_url=first_page_url,
+                page_template=page_url_template,
+                output_dir=folder_name,
+                main_pickle_file=properties_path,
+                new_pickle_file=new_properties_path,
+            )
 
 
-    scrape_all_pages(
-        base_url=first_page_url,
-        page_template=page_url_template,
-        output_dir=folder_name,
-        main_pickle_file=properties_path,
-        new_pickle_file=new_properties_path,
-    )
+# def scrap(folder_name):
+#     properties_path = 'results/properties.pkl'
+#     new_properties_path = 'results/new_properties.pkl'
+#     # ----------------------- SCRAPPING ------------------------------------ 
+
+#     # ------------- PROPIEDAD 6 (PISOS) AREA 5 (Área de La Felguera, Sama y Laviana) -------------
+#     propiedad = 6
+#     area = 5
+#     first_page_url = f"https://www.inmocasal.es/busqueda-avanzada/?gestion=comprar&propiedad={propiedad}&area={area}&precioMax=75000&ordenar=1&pagina=1"
+#     page_url_template = f"https://www.inmocasal.es/busqueda-avanzada/?gestion=comprar&propiedad={propiedad}&area={area}&precioMax=75000&ordenar=1&pagina="
+#     page_url_template += "{page}"
+
+#     scrape_all_pages(
+#         base_url=first_page_url,
+#         page_template=page_url_template,
+#         output_dir=folder_name,
+#         main_pickle_file=properties_path,
+#         new_pickle_file=new_properties_path,
+#     )
+    
