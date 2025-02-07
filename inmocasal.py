@@ -146,8 +146,8 @@ def scrap(folder_name):
     # Loop through all combinations of areas and propiedades
     for area in areas:
         for propiedad in propiedades:
-            first_page_url = f"https://www.inmocasal.es/busqueda-avanzada/?gestion=comprar&propiedad={propiedad}&area={area}&precioMax=75000&ordenar=1&pagina=1"
-            page_url_template = f"https://www.inmocasal.es/busqueda-avanzada/?gestion=comprar&propiedad={propiedad}&area={area}&precioMax=75000&ordenar=1&pagina={{page}}"
+            first_page_url = f"https://www.inmocasal.es/busqueda-avanzada/?gestion=comprar&propiedad={propiedad}&area={area}&precioMin=0&precioMax=75000&ordenar=1&pagina=1"
+            page_url_template = f"https://www.inmocasal.es/busqueda-avanzada/?gestion=comprar&propiedad={propiedad}&area={area}&precioMin=0&precioMax=75000&ordenar=1&pagina={{page}}"
 
             # Call the scraping function for each combination
             scrape_all_pages(
