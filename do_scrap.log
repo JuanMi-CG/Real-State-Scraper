@@ -13781,3 +13781,74 @@ Index: []
 Columns: [ref, price, url, inmobiliaria]
 Index: []
 2025-04-10 14:01:42,692 - scrap_logging - INFO - No new properties are available. Email won't be sent.
+2025-04-11 14:00:37,761 - scrap_logging - INFO - Initialized a fresh new_properties file at results/new_properties.pkl.
+2025-04-11 14:00:42,125 - scrap_logging - INFO - Entrando en la web: https://arxus.es/propiedades/?TipoOperacion=Venta&Precio2=50000&Tipo[]=Casas+o+chalets&Tipo[]=Pisos
+2025-04-11 14:00:47,628 - scrap_logging - INFO - HTML saved to axius/page_1.html.
+2025-04-11 14:00:47,834 - scrap_logging - INFO - Total Properties: 28
+2025-04-11 14:00:47,835 - scrap_logging - INFO - ----------------------------------------------------------------------------------------------------
+2025-04-11 14:00:47,835 - scrap_logging - INFO - Scraping page 1/3...
+2025-04-11 14:00:47,835 - scrap_logging - INFO - Skipping download: axius/page_1.html already exists.
+2025-04-11 14:00:48,059 - scrap_logging - INFO - Number of items: 263
+2025-04-11 14:00:48,059 - scrap_logging - INFO - ----------------------------------------------------------------------------------------------------
+2025-04-11 14:00:48,059 - scrap_logging - INFO - Scraping page 2/3...
+2025-04-11 14:00:50,533 - scrap_logging - INFO - Entrando en la web: https://arxus.es/propiedades/?TipoOperacion=Venta&Precio2=50000&Tipo[]=Casas+o+chalets&Tipo[]=Pisos&pagina=1
+2025-04-11 14:00:53,676 - scrap_logging - INFO - HTML saved to axius/page_2.html.
+2025-04-11 14:00:53,773 - scrap_logging - INFO - Number of items: 263
+2025-04-11 14:00:53,774 - scrap_logging - INFO - ----------------------------------------------------------------------------------------------------
+2025-04-11 14:00:53,774 - scrap_logging - INFO - Scraping page 3/3...
+2025-04-11 14:00:56,186 - scrap_logging - INFO - Entrando en la web: https://arxus.es/propiedades/?TipoOperacion=Venta&Precio2=50000&Tipo[]=Casas+o+chalets&Tipo[]=Pisos&pagina=2
+2025-04-11 14:00:59,420 - scrap_logging - INFO - HTML saved to axius/page_3.html.
+2025-04-11 14:00:59,477 - scrap_logging - INFO - Number of items: 263
+2025-04-11 14:00:59,550 - scrap_logging - INFO -                ref  ... inmobiliaria
+0           743815  ...        axius
+1       LF00004246  ...    inmocasal
+2       LF00004305  ...    inmocasal
+3       LF00002743  ...    inmocasal
+4       LF00004352  ...    inmocasal
+..             ...  ...          ...
+258  EXP.496_PBVTA  ...        axius
+259  EXP.484_PBVTA  ...        axius
+260  EXP.362_PBVTA  ...        axius
+261           1556  ...        axius
+262          94035  ...        axius
+
+[263 rows x 4 columns]
+2025-04-11 14:01:04,678 - scrap_logging - INFO - Entrando en la web: https://www.inmocasal.es/busqueda-avanzada/?gestion=comprar&propiedad=2&area=3&precioMin=0&precioMax=75000&ordenar=1&pagina=1
+2025-04-11 14:01:08,984 - scrap_logging - INFO - HTML saved to inmocasal/page_1.html.
+2025-04-11 14:01:09,056 - scrap_logging - INFO - No matching span found for total pages.
+2025-04-11 14:01:09,056 - scrap_logging - INFO - Total Properties: 0
+2025-04-11 14:01:09,672 - scrap_logging - INFO - Skipping download: inmocasal/page_1.html already exists.
+2025-04-11 14:01:09,741 - scrap_logging - INFO - No matching span found for total pages.
+2025-04-11 14:01:09,741 - scrap_logging - INFO - Total Properties: 0
+2025-04-11 14:01:10,357 - scrap_logging - INFO - Skipping download: inmocasal/page_1.html already exists.
+2025-04-11 14:01:10,417 - scrap_logging - INFO - No matching span found for total pages.
+2025-04-11 14:01:10,417 - scrap_logging - INFO - Total Properties: 0
+2025-04-11 14:01:11,032 - scrap_logging - INFO - Skipping download: inmocasal/page_1.html already exists.
+2025-04-11 14:01:11,133 - scrap_logging - INFO - No matching span found for total pages.
+2025-04-11 14:01:11,133 - scrap_logging - INFO - Total Properties: 0
+2025-04-11 14:01:11,725 - scrap_logging - INFO - Skipping download: inmocasal/page_1.html already exists.
+2025-04-11 14:01:11,792 - scrap_logging - INFO - No matching span found for total pages.
+2025-04-11 14:01:11,792 - scrap_logging - INFO - Total Properties: 0
+2025-04-11 14:01:12,401 - scrap_logging - INFO - Skipping download: inmocasal/page_1.html already exists.
+2025-04-11 14:01:12,462 - scrap_logging - INFO - No matching span found for total pages.
+2025-04-11 14:01:12,463 - scrap_logging - INFO - Total Properties: 0
+2025-04-11 14:01:12,521 - scrap_logging - INFO -                ref  ... inmobiliaria
+0           743815  ...        axius
+1       LF00004246  ...    inmocasal
+2       LF00004305  ...    inmocasal
+3       LF00002743  ...    inmocasal
+4       LF00004352  ...    inmocasal
+..             ...  ...          ...
+258  EXP.496_PBVTA  ...        axius
+259  EXP.484_PBVTA  ...        axius
+260  EXP.362_PBVTA  ...        axius
+261           1556  ...        axius
+262          94035  ...        axius
+
+[263 rows x 4 columns]
+2025-04-11 14:01:12,532 - scrap_logging - INFO - ----------------------------------------------------------------------------------------------------
+2025-04-11 14:01:12,533 - scrap_logging - INFO - Empty DataFrame
+Columns: [ref, price, url, inmobiliaria]
+Index: []
+2025-04-11 14:01:14,048 - scrap_logging - INFO - Correo enviado con éxito
+2025-04-11 14:01:14,048 - scrap_logging - INFO - The file results/last_sent_email.txt has been updated with the current date: 11/04/2025
