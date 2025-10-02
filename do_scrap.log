@@ -26145,3 +26145,68 @@ Columns: [ref, price, url, inmobiliaria]
 Index: []
 2025-10-01 14:01:34,667 - scrap_logging - INFO - Correo enviado con éxito
 2025-10-01 14:01:34,667 - scrap_logging - INFO - The file results/last_sent_email.txt has been updated with the current date: 01/10/2025
+2025-10-02 14:00:46,672 - scrap_logging - INFO - Initialized a fresh new_properties file at results/new_properties.pkl.
+2025-10-02 14:00:50,609 - scrap_logging - INFO - Entrando en la web: https://arxus.es/propiedades/?TipoOperacion=Venta&Precio2=50000&Tipo[]=Casas+o+chalets&Tipo[]=Pisos
+2025-10-02 14:00:56,880 - scrap_logging - INFO - HTML saved to axius/page_1.html.
+2025-10-02 14:00:56,998 - scrap_logging - INFO - Total Properties: 22
+2025-10-02 14:00:56,998 - scrap_logging - INFO - ----------------------------------------------------------------------------------------------------
+2025-10-02 14:00:56,998 - scrap_logging - INFO - Scraping page 1/2...
+2025-10-02 14:00:56,998 - scrap_logging - INFO - Skipping download: axius/page_1.html already exists.
+2025-10-02 14:00:57,107 - scrap_logging - INFO - Number of items: 286
+2025-10-02 14:00:57,107 - scrap_logging - INFO - ----------------------------------------------------------------------------------------------------
+2025-10-02 14:00:57,107 - scrap_logging - INFO - Scraping page 2/2...
+2025-10-02 14:00:59,234 - scrap_logging - INFO - Entrando en la web: https://arxus.es/propiedades/?TipoOperacion=Venta&Precio2=50000&Tipo[]=Casas+o+chalets&Tipo[]=Pisos&pagina=1
+2025-10-02 14:01:03,566 - scrap_logging - INFO - HTML saved to axius/page_2.html.
+2025-10-02 14:01:03,650 - scrap_logging - INFO - Number of items: 286
+2025-10-02 14:01:03,713 - scrap_logging - INFO -                ref  ... inmobiliaria
+0           743815  ...        axius
+1       LF00004246  ...    inmocasal
+2       LF00004305  ...    inmocasal
+3       LF00002743  ...    inmocasal
+4       LF00004352  ...    inmocasal
+..             ...  ...          ...
+281         829947  ...        axius
+282           153C  ...        axius
+283  EXP.496_PBVTA  ...        axius
+284           1556  ...        axius
+285          94035  ...        axius
+
+[286 rows x 4 columns]
+2025-10-02 14:01:06,988 - scrap_logging - INFO - Entrando en la web: https://www.inmocasal.es/busqueda-avanzada/?gestion=comprar&propiedad=2&area=3&precioMin=0&precioMax=75000&ordenar=1&pagina=1
+2025-10-02 14:01:12,776 - scrap_logging - INFO - HTML saved to inmocasal/page_1.html.
+2025-10-02 14:01:12,827 - scrap_logging - INFO - No matching span found for total pages.
+2025-10-02 14:01:12,827 - scrap_logging - INFO - Total Properties: 0
+2025-10-02 14:01:13,214 - scrap_logging - INFO - Skipping download: inmocasal/page_1.html already exists.
+2025-10-02 14:01:13,267 - scrap_logging - INFO - No matching span found for total pages.
+2025-10-02 14:01:13,268 - scrap_logging - INFO - Total Properties: 0
+2025-10-02 14:01:13,655 - scrap_logging - INFO - Skipping download: inmocasal/page_1.html already exists.
+2025-10-02 14:01:13,712 - scrap_logging - INFO - No matching span found for total pages.
+2025-10-02 14:01:13,713 - scrap_logging - INFO - Total Properties: 0
+2025-10-02 14:01:14,130 - scrap_logging - INFO - Skipping download: inmocasal/page_1.html already exists.
+2025-10-02 14:01:14,183 - scrap_logging - INFO - No matching span found for total pages.
+2025-10-02 14:01:14,183 - scrap_logging - INFO - Total Properties: 0
+2025-10-02 14:01:14,578 - scrap_logging - INFO - Skipping download: inmocasal/page_1.html already exists.
+2025-10-02 14:01:14,631 - scrap_logging - INFO - No matching span found for total pages.
+2025-10-02 14:01:14,631 - scrap_logging - INFO - Total Properties: 0
+2025-10-02 14:01:15,008 - scrap_logging - INFO - Skipping download: inmocasal/page_1.html already exists.
+2025-10-02 14:01:15,061 - scrap_logging - INFO - No matching span found for total pages.
+2025-10-02 14:01:15,061 - scrap_logging - INFO - Total Properties: 0
+2025-10-02 14:01:15,120 - scrap_logging - INFO -                ref  ... inmobiliaria
+0           743815  ...        axius
+1       LF00004246  ...    inmocasal
+2       LF00004305  ...    inmocasal
+3       LF00002743  ...    inmocasal
+4       LF00004352  ...    inmocasal
+..             ...  ...          ...
+281         829947  ...        axius
+282           153C  ...        axius
+283  EXP.496_PBVTA  ...        axius
+284           1556  ...        axius
+285          94035  ...        axius
+
+[286 rows x 4 columns]
+2025-10-02 14:01:15,130 - scrap_logging - INFO - ----------------------------------------------------------------------------------------------------
+2025-10-02 14:01:15,131 - scrap_logging - INFO - Empty DataFrame
+Columns: [ref, price, url, inmobiliaria]
+Index: []
+2025-10-02 14:01:15,132 - scrap_logging - INFO - No new properties are available. Email won't be sent.
