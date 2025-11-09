@@ -28627,3 +28627,132 @@ Index: []
 Columns: [ref, price, url, inmobiliaria]
 Index: []
 2025-11-08 14:01:20,585 - scrap_logging - INFO - No new properties are available. Email won't be sent.
+2025-11-09 14:00:36,287 - scrap_logging - INFO - Initialized a fresh new_properties file at results/new_properties.pkl.
+2025-11-09 14:00:47,340 - scrap_logging - INFO - Entrando en la web: https://arxus.es/propiedades/?TipoOperacion=Venta&Precio2=50000&Tipo[]=Casas+o+chalets&Tipo[]=Pisos
+2025-11-09 14:00:53,614 - scrap_logging - INFO - HTML saved to axius/page_1.html.
+2025-11-09 14:00:53,718 - scrap_logging - INFO - Total Properties: 19
+2025-11-09 14:00:53,718 - scrap_logging - INFO - ----------------------------------------------------------------------------------------------------
+2025-11-09 14:00:53,718 - scrap_logging - INFO - Scraping page 1/2...
+2025-11-09 14:00:53,718 - scrap_logging - INFO - Skipping download: axius/page_1.html already exists.
+2025-11-09 14:00:53,832 - scrap_logging - INFO - Number of items: 287
+2025-11-09 14:00:53,832 - scrap_logging - INFO - ----------------------------------------------------------------------------------------------------
+2025-11-09 14:00:53,833 - scrap_logging - INFO - Scraping page 2/2...
+2025-11-09 14:00:58,775 - scrap_logging - INFO - Entrando en la web: https://arxus.es/propiedades/?TipoOperacion=Venta&Precio2=50000&Tipo[]=Casas+o+chalets&Tipo[]=Pisos&pagina=1
+2025-11-09 14:01:02,662 - scrap_logging - INFO - HTML saved to axius/page_2.html.
+2025-11-09 14:01:02,734 - scrap_logging - INFO - Number of items: 287
+2025-11-09 14:01:02,801 - scrap_logging - INFO -                ref  ... inmobiliaria
+0           743815  ...        axius
+1       LF00004246  ...    inmocasal
+2       LF00004305  ...    inmocasal
+3       LF00002743  ...    inmocasal
+4       LF00004352  ...    inmocasal
+..             ...  ...          ...
+282           137C  ...        axius
+283         829947  ...        axius
+284           153C  ...        axius
+285  EXP.496_PBVTA  ...        axius
+286          94035  ...        axius
+
+[287 rows x 4 columns]
+2025-11-09 14:01:06,027 - scrap_logging - INFO - Entrando en la web: https://www.inmocasal.es/busqueda-avanzada/?gestion=comprar&propiedad=2&area=3&precioMin=0&precioMax=75000&ordenar=1&pagina=1
+2025-11-09 14:03:07,804 - scrap_logging - ERROR - Error accessing https://www.inmocasal.es/busqueda-avanzada/?gestion=comprar&propiedad=2&area=3&precioMin=0&precioMax=75000&ordenar=1&pagina=1 on attempt 1: HTTPConnectionPool(host='localhost', port=54475): Read timed out. (read timeout=120)
+2025-11-09 14:03:11,062 - scrap_logging - INFO - Entrando en la web: https://www.inmocasal.es/busqueda-avanzada/?gestion=comprar&propiedad=2&area=3&precioMin=0&precioMax=75000&ordenar=1&pagina=1
+2025-11-09 14:05:11,133 - scrap_logging - ERROR - Error accessing https://www.inmocasal.es/busqueda-avanzada/?gestion=comprar&propiedad=2&area=3&precioMin=0&precioMax=75000&ordenar=1&pagina=1 on attempt 2: HTTPConnectionPool(host='localhost', port=54475): Read timed out. (read timeout=120)
+2025-11-09 14:05:11,133 - scrap_logging - ERROR - Failed to save non-empty HTML content for https://www.inmocasal.es/busqueda-avanzada/?gestion=comprar&propiedad=2&area=3&precioMin=0&precioMax=75000&ordenar=1&pagina=1 after 2 retries.
+2025-11-09 14:05:11,133 - scrap_logging - INFO - Error get_total_pages(). Exception: [Errno 2] No such file or directory: 'inmocasal/page_1.html'
+2025-11-09 14:05:11,133 - scrap_logging - INFO - Total Properties: 0
+2025-11-09 14:05:45,797 - scrap_logging - INFO - Entrando en la web: https://www.inmocasal.es/busqueda-avanzada/?gestion=comprar&propiedad=6&area=3&precioMin=0&precioMax=75000&ordenar=1&pagina=1
+2025-11-09 14:05:56,192 - scrap_logging - ERROR - Error accessing https://www.inmocasal.es/busqueda-avanzada/?gestion=comprar&propiedad=6&area=3&precioMin=0&precioMax=75000&ordenar=1&pagina=1 on attempt 1: Message: 
+Stacktrace:
+#0 0x560191698aca <unknown>
+#1 0x5601910e4cdb <unknown>
+#2 0x5601911376c4 <unknown>
+#3 0x560191137901 <unknown>
+#4 0x5601911868b4 <unknown>
+#5 0x560191183c87 <unknown>
+#6 0x560191129aca <unknown>
+#7 0x56019112a7d1 <unknown>
+#8 0x56019165fa99 <unknown>
+#9 0x560191662a6c <unknown>
+#10 0x560191648d29 <unknown>
+#11 0x560191663665 <unknown>
+#12 0x5601916306a3 <unknown>
+#13 0x5601916857b8 <unknown>
+#14 0x560191685993 <unknown>
+#15 0x560191697a63 <unknown>
+#16 0x7f1ca529caa4 <unknown>
+#17 0x7f1ca5329c6c <unknown>
+
+2025-11-09 14:05:59,569 - scrap_logging - INFO - Entrando en la web: https://www.inmocasal.es/busqueda-avanzada/?gestion=comprar&propiedad=6&area=3&precioMin=0&precioMax=75000&ordenar=1&pagina=1
+2025-11-09 14:06:11,901 - scrap_logging - ERROR - Error accessing https://www.inmocasal.es/busqueda-avanzada/?gestion=comprar&propiedad=6&area=3&precioMin=0&precioMax=75000&ordenar=1&pagina=1 on attempt 2: Message: 
+Stacktrace:
+#0 0x560191698aca <unknown>
+#1 0x5601910e4cdb <unknown>
+#2 0x5601911376c4 <unknown>
+#3 0x560191137901 <unknown>
+#4 0x5601911868b4 <unknown>
+#5 0x560191183c87 <unknown>
+#6 0x560191129aca <unknown>
+#7 0x56019112a7d1 <unknown>
+#8 0x56019165fa99 <unknown>
+#9 0x560191662a6c <unknown>
+#10 0x560191648d29 <unknown>
+#11 0x560191663665 <unknown>
+#12 0x5601916306a3 <unknown>
+#13 0x5601916857b8 <unknown>
+#14 0x560191685993 <unknown>
+#15 0x560191697a63 <unknown>
+#16 0x7f1ca529caa4 <unknown>
+#17 0x7f1ca5329c6c <unknown>
+
+2025-11-09 14:06:11,901 - scrap_logging - ERROR - Failed to save non-empty HTML content for https://www.inmocasal.es/busqueda-avanzada/?gestion=comprar&propiedad=6&area=3&precioMin=0&precioMax=75000&ordenar=1&pagina=1 after 2 retries.
+2025-11-09 14:06:11,901 - scrap_logging - INFO - Error get_total_pages(). Exception: [Errno 2] No such file or directory: 'inmocasal/page_1.html'
+2025-11-09 14:06:11,901 - scrap_logging - INFO - Total Properties: 0
+2025-11-09 14:06:15,953 - scrap_logging - INFO - Entrando en la web: https://www.inmocasal.es/busqueda-avanzada/?gestion=comprar&propiedad=2&area=4&precioMin=0&precioMax=75000&ordenar=1&pagina=1
+2025-11-09 14:08:17,403 - scrap_logging - ERROR - Error accessing https://www.inmocasal.es/busqueda-avanzada/?gestion=comprar&propiedad=2&area=4&precioMin=0&precioMax=75000&ordenar=1&pagina=1 on attempt 1: HTTPConnectionPool(host='localhost', port=38423): Read timed out. (read timeout=120)
+2025-11-09 14:08:22,255 - scrap_logging - INFO - Entrando en la web: https://www.inmocasal.es/busqueda-avanzada/?gestion=comprar&propiedad=2&area=4&precioMin=0&precioMax=75000&ordenar=1&pagina=1
+2025-11-09 14:10:22,318 - scrap_logging - ERROR - Error accessing https://www.inmocasal.es/busqueda-avanzada/?gestion=comprar&propiedad=2&area=4&precioMin=0&precioMax=75000&ordenar=1&pagina=1 on attempt 2: HTTPConnectionPool(host='localhost', port=38423): Read timed out. (read timeout=120)
+2025-11-09 14:10:22,319 - scrap_logging - ERROR - Failed to save non-empty HTML content for https://www.inmocasal.es/busqueda-avanzada/?gestion=comprar&propiedad=2&area=4&precioMin=0&precioMax=75000&ordenar=1&pagina=1 after 2 retries.
+2025-11-09 14:10:22,319 - scrap_logging - INFO - Error get_total_pages(). Exception: [Errno 2] No such file or directory: 'inmocasal/page_1.html'
+2025-11-09 14:10:22,319 - scrap_logging - INFO - Total Properties: 0
+2025-11-09 14:16:21,639 - scrap_logging - INFO - Entrando en la web: https://www.inmocasal.es/busqueda-avanzada/?gestion=comprar&propiedad=6&area=4&precioMin=0&precioMax=75000&ordenar=1&pagina=1
+2025-11-09 14:18:23,370 - scrap_logging - ERROR - Error accessing https://www.inmocasal.es/busqueda-avanzada/?gestion=comprar&propiedad=6&area=4&precioMin=0&precioMax=75000&ordenar=1&pagina=1 on attempt 1: HTTPConnectionPool(host='localhost', port=52115): Read timed out. (read timeout=120)
+2025-11-09 14:18:26,740 - scrap_logging - INFO - Entrando en la web: https://www.inmocasal.es/busqueda-avanzada/?gestion=comprar&propiedad=6&area=4&precioMin=0&precioMax=75000&ordenar=1&pagina=1
+2025-11-09 14:20:26,768 - scrap_logging - ERROR - Error accessing https://www.inmocasal.es/busqueda-avanzada/?gestion=comprar&propiedad=6&area=4&precioMin=0&precioMax=75000&ordenar=1&pagina=1 on attempt 2: HTTPConnectionPool(host='localhost', port=52115): Read timed out. (read timeout=120)
+2025-11-09 14:20:26,768 - scrap_logging - ERROR - Failed to save non-empty HTML content for https://www.inmocasal.es/busqueda-avanzada/?gestion=comprar&propiedad=6&area=4&precioMin=0&precioMax=75000&ordenar=1&pagina=1 after 2 retries.
+2025-11-09 14:20:26,768 - scrap_logging - INFO - Error get_total_pages(). Exception: [Errno 2] No such file or directory: 'inmocasal/page_1.html'
+2025-11-09 14:20:26,768 - scrap_logging - INFO - Total Properties: 0
+2025-11-09 14:26:27,219 - scrap_logging - INFO - Entrando en la web: https://www.inmocasal.es/busqueda-avanzada/?gestion=comprar&propiedad=2&area=5&precioMin=0&precioMax=75000&ordenar=1&pagina=1
+2025-11-09 14:28:28,592 - scrap_logging - ERROR - Error accessing https://www.inmocasal.es/busqueda-avanzada/?gestion=comprar&propiedad=2&area=5&precioMin=0&precioMax=75000&ordenar=1&pagina=1 on attempt 1: HTTPConnectionPool(host='localhost', port=52883): Read timed out. (read timeout=120)
+2025-11-09 14:28:33,353 - scrap_logging - INFO - Entrando en la web: https://www.inmocasal.es/busqueda-avanzada/?gestion=comprar&propiedad=2&area=5&precioMin=0&precioMax=75000&ordenar=1&pagina=1
+2025-11-09 14:30:33,433 - scrap_logging - ERROR - Error accessing https://www.inmocasal.es/busqueda-avanzada/?gestion=comprar&propiedad=2&area=5&precioMin=0&precioMax=75000&ordenar=1&pagina=1 on attempt 2: HTTPConnectionPool(host='localhost', port=52883): Read timed out. (read timeout=120)
+2025-11-09 14:30:33,434 - scrap_logging - ERROR - Failed to save non-empty HTML content for https://www.inmocasal.es/busqueda-avanzada/?gestion=comprar&propiedad=2&area=5&precioMin=0&precioMax=75000&ordenar=1&pagina=1 after 2 retries.
+2025-11-09 14:30:33,434 - scrap_logging - INFO - Error get_total_pages(). Exception: [Errno 2] No such file or directory: 'inmocasal/page_1.html'
+2025-11-09 14:30:33,434 - scrap_logging - INFO - Total Properties: 0
+2025-11-09 14:36:32,488 - scrap_logging - INFO - Entrando en la web: https://www.inmocasal.es/busqueda-avanzada/?gestion=comprar&propiedad=6&area=5&precioMin=0&precioMax=75000&ordenar=1&pagina=1
+2025-11-09 14:38:33,942 - scrap_logging - ERROR - Error accessing https://www.inmocasal.es/busqueda-avanzada/?gestion=comprar&propiedad=6&area=5&precioMin=0&precioMax=75000&ordenar=1&pagina=1 on attempt 1: HTTPConnectionPool(host='localhost', port=60041): Read timed out. (read timeout=120)
+2025-11-09 14:38:36,753 - scrap_logging - INFO - Entrando en la web: https://www.inmocasal.es/busqueda-avanzada/?gestion=comprar&propiedad=6&area=5&precioMin=0&precioMax=75000&ordenar=1&pagina=1
+2025-11-09 14:40:36,826 - scrap_logging - ERROR - Error accessing https://www.inmocasal.es/busqueda-avanzada/?gestion=comprar&propiedad=6&area=5&precioMin=0&precioMax=75000&ordenar=1&pagina=1 on attempt 2: HTTPConnectionPool(host='localhost', port=60041): Read timed out. (read timeout=120)
+2025-11-09 14:40:36,826 - scrap_logging - ERROR - Failed to save non-empty HTML content for https://www.inmocasal.es/busqueda-avanzada/?gestion=comprar&propiedad=6&area=5&precioMin=0&precioMax=75000&ordenar=1&pagina=1 after 2 retries.
+2025-11-09 14:40:36,826 - scrap_logging - INFO - Error get_total_pages(). Exception: [Errno 2] No such file or directory: 'inmocasal/page_1.html'
+2025-11-09 14:40:36,827 - scrap_logging - INFO - Total Properties: 0
+2025-11-09 14:46:33,957 - scrap_logging - INFO -                ref  ... inmobiliaria
+0           743815  ...        axius
+1       LF00004246  ...    inmocasal
+2       LF00004305  ...    inmocasal
+3       LF00002743  ...    inmocasal
+4       LF00004352  ...    inmocasal
+..             ...  ...          ...
+282           137C  ...        axius
+283         829947  ...        axius
+284           153C  ...        axius
+285  EXP.496_PBVTA  ...        axius
+286          94035  ...        axius
+
+[287 rows x 4 columns]
+2025-11-09 14:46:33,967 - scrap_logging - INFO - ----------------------------------------------------------------------------------------------------
+2025-11-09 14:46:33,968 - scrap_logging - INFO - Empty DataFrame
+Columns: [ref, price, url, inmobiliaria]
+Index: []
+2025-11-09 14:46:37,025 - scrap_logging - INFO - Correo enviado con éxito
+2025-11-09 14:46:37,025 - scrap_logging - INFO - The file results/last_sent_email.txt has been updated with the current date: 09/11/2025
