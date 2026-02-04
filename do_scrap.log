@@ -33788,3 +33788,61 @@ Index: []
 Columns: [ref, price, url, inmobiliaria]
 Index: []
 2026-02-03 14:35:13,975 - scrap_logging - INFO - No new properties are available. Email won't be sent.
+2026-02-04 14:32:48,830 - scrap_logging - INFO - Initialized a fresh new_properties file at results/new_properties.pkl.
+2026-02-04 14:32:54,246 - scrap_logging - INFO - Entrando en la web: https://arxus.es/propiedades/?TipoOperacion=Venta&Precio2=50000&Tipo[]=Casas+o+chalets&Tipo[]=Pisos
+2026-02-04 14:33:02,972 - scrap_logging - INFO - HTML saved to axius/page_1.html.
+2026-02-04 14:33:03,012 - scrap_logging - INFO - Error get_total_items(). Exception: invalid literal for int() with base 10: 'Encontrados'
+2026-02-04 14:33:03,012 - scrap_logging - INFO - Total Properties: 0
+2026-02-04 14:33:03,075 - scrap_logging - INFO -                ref  ... inmobiliaria
+0           743815  ...        axius
+1       LF00004246  ...    inmocasal
+2       LF00004305  ...    inmocasal
+3       LF00002743  ...    inmocasal
+4       LF00004352  ...    inmocasal
+..             ...  ...          ...
+284           137C  ...        axius
+285         829947  ...        axius
+286           153C  ...        axius
+287  EXP.496_PBVTA  ...        axius
+288          94035  ...        axius
+
+[289 rows x 4 columns]
+2026-02-04 14:33:06,820 - scrap_logging - INFO - Entrando en la web: https://www.inmocasal.es/busqueda-avanzada/?gestion=comprar&propiedad=2&area=3&precioMin=0&precioMax=75000&ordenar=1&pagina=1
+2026-02-04 14:33:11,911 - scrap_logging - INFO - HTML saved to inmocasal/page_1.html.
+2026-02-04 14:33:11,958 - scrap_logging - INFO - No matching span found for total pages.
+2026-02-04 14:33:11,958 - scrap_logging - INFO - Total Properties: 0
+2026-02-04 14:33:12,399 - scrap_logging - INFO - Skipping download: inmocasal/page_1.html already exists.
+2026-02-04 14:33:12,450 - scrap_logging - INFO - No matching span found for total pages.
+2026-02-04 14:33:12,450 - scrap_logging - INFO - Total Properties: 0
+2026-02-04 14:33:12,890 - scrap_logging - INFO - Skipping download: inmocasal/page_1.html already exists.
+2026-02-04 14:33:12,940 - scrap_logging - INFO - No matching span found for total pages.
+2026-02-04 14:33:12,940 - scrap_logging - INFO - Total Properties: 0
+2026-02-04 14:33:13,386 - scrap_logging - INFO - Skipping download: inmocasal/page_1.html already exists.
+2026-02-04 14:33:13,439 - scrap_logging - INFO - No matching span found for total pages.
+2026-02-04 14:33:13,439 - scrap_logging - INFO - Total Properties: 0
+2026-02-04 14:33:13,882 - scrap_logging - INFO - Skipping download: inmocasal/page_1.html already exists.
+2026-02-04 14:33:13,932 - scrap_logging - INFO - No matching span found for total pages.
+2026-02-04 14:33:13,932 - scrap_logging - INFO - Total Properties: 0
+2026-02-04 14:33:14,387 - scrap_logging - INFO - Skipping download: inmocasal/page_1.html already exists.
+2026-02-04 14:33:14,436 - scrap_logging - INFO - No matching span found for total pages.
+2026-02-04 14:33:14,436 - scrap_logging - INFO - Total Properties: 0
+2026-02-04 14:33:14,492 - scrap_logging - INFO -                ref  ... inmobiliaria
+0           743815  ...        axius
+1       LF00004246  ...    inmocasal
+2       LF00004305  ...    inmocasal
+3       LF00002743  ...    inmocasal
+4       LF00004352  ...    inmocasal
+..             ...  ...          ...
+284           137C  ...        axius
+285         829947  ...        axius
+286           153C  ...        axius
+287  EXP.496_PBVTA  ...        axius
+288          94035  ...        axius
+
+[289 rows x 4 columns]
+2026-02-04 14:33:14,501 - scrap_logging - INFO - ----------------------------------------------------------------------------------------------------
+2026-02-04 14:33:14,502 - scrap_logging - INFO - Empty DataFrame
+Columns: [ref, price, url, inmobiliaria]
+Index: []
+2026-02-04 14:33:16,128 - scrap_logging - INFO - Correo enviado con éxito
+2026-02-04 14:33:16,128 - scrap_logging - INFO - The file results/last_sent_email.txt has been updated with the current date: 04/02/2026
