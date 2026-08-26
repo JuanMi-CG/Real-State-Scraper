@@ -54706,3 +54706,224 @@ Columns: [ref, price, url, inmobiliaria]
 Index: []
 2026-08-25 14:32:31,876 - scrap_logging - INFO - Correo enviado con éxito
 2026-08-25 14:32:31,876 - scrap_logging - INFO - The file results/last_sent_email.txt has been updated with the current date: 25/08/2026
+2026-08-26 14:30:16,900 - scrap_logging - INFO - Initialized a fresh new_properties file at results/new_properties.pkl.
+2026-08-26 14:30:29,134 - scrap_logging - INFO - Entrando en la web: https://arxus.es/propiedades/?TipoOperacion=Venta&Precio2=50000&Tipo[]=Casas+o+chalets&Tipo[]=Pisos
+2026-08-26 14:30:43,747 - scrap_logging - ERROR - Error accessing https://arxus.es/propiedades/?TipoOperacion=Venta&Precio2=50000&Tipo[]=Casas+o+chalets&Tipo[]=Pisos on attempt 1: Message: 
+Stacktrace:
+#0 0x559afd4e936a <unknown>
+#1 0x559afce5cf49 <unknown>
+#2 0x559afceb27e2 <unknown>
+#3 0x559afceb2a31 <unknown>
+#4 0x559afcefded4 <unknown>
+#5 0x559afcefb0c3 <unknown>
+#6 0x559afcea5c92 <unknown>
+#7 0x559afcea6b11 <unknown>
+#8 0x559afd4ae8d0 <unknown>
+#9 0x559afd4acf3a <unknown>
+#10 0x559afd4979b5 <unknown>
+#11 0x559afd4adc0a <unknown>
+#12 0x559afd47f740 <unknown>
+#13 0x559afd4d49a8 <unknown>
+#14 0x559afd4d4b45 <unknown>
+#15 0x559afd4e7f1e <unknown>
+#16 0x7f898d29cb84 <unknown>
+#17 0x7f898d329d6c <unknown>
+
+2026-08-26 14:30:47,296 - scrap_logging - INFO - Entrando en la web: https://arxus.es/propiedades/?TipoOperacion=Venta&Precio2=50000&Tipo[]=Casas+o+chalets&Tipo[]=Pisos
+2026-08-26 14:30:57,933 - scrap_logging - ERROR - Error accessing https://arxus.es/propiedades/?TipoOperacion=Venta&Precio2=50000&Tipo[]=Casas+o+chalets&Tipo[]=Pisos on attempt 2: Message: 
+Stacktrace:
+#0 0x559afd4e936a <unknown>
+#1 0x559afce5cf49 <unknown>
+#2 0x559afceb27e2 <unknown>
+#3 0x559afceb2a31 <unknown>
+#4 0x559afcefded4 <unknown>
+#5 0x559afcefb0c3 <unknown>
+#6 0x559afcea5c92 <unknown>
+#7 0x559afcea6b11 <unknown>
+#8 0x559afd4ae8d0 <unknown>
+#9 0x559afd4acf3a <unknown>
+#10 0x559afd4979b5 <unknown>
+#11 0x559afd4adc0a <unknown>
+#12 0x559afd47f740 <unknown>
+#13 0x559afd4d49a8 <unknown>
+#14 0x559afd4d4b45 <unknown>
+#15 0x559afd4e7f1e <unknown>
+#16 0x7f898d29cb84 <unknown>
+#17 0x7f898d329d6c <unknown>
+
+2026-08-26 14:30:57,933 - scrap_logging - ERROR - Failed to save non-empty HTML content for https://arxus.es/propiedades/?TipoOperacion=Venta&Precio2=50000&Tipo[]=Casas+o+chalets&Tipo[]=Pisos after 2 retries.
+2026-08-26 14:30:57,933 - scrap_logging - INFO - Error get_total_items(). Exception: [Errno 2] No such file or directory: 'axius/page_1.html'
+2026-08-26 14:30:57,933 - scrap_logging - INFO - Total Properties: 0
+2026-08-26 14:30:58,000 - scrap_logging - INFO -             ref  ... inmobiliaria
+0        743815  ...        axius
+1    LF00004246  ...    inmocasal
+2    LF00004305  ...    inmocasal
+3    LF00002743  ...    inmocasal
+4    LF00004352  ...    inmocasal
+..          ...  ...          ...
+315  MR00002220  ...    inmocasal
+316  AV00002807  ...    inmocasal
+317  MR00002206  ...    inmocasal
+318  MR00002157  ...    inmocasal
+319  MI00004405  ...    inmocasal
+
+[320 rows x 4 columns]
+2026-08-26 14:31:00,757 - scrap_logging - INFO - Entrando en la web: https://www.inmocasal.es/busqueda-avanzada/?gestion=comprar&propiedad=2&area=3&precioMin=0&precioMax=75000&ordenar=1&pagina=1
+2026-08-26 14:31:14,836 - scrap_logging - ERROR - Error accessing https://www.inmocasal.es/busqueda-avanzada/?gestion=comprar&propiedad=2&area=3&precioMin=0&precioMax=75000&ordenar=1&pagina=1 on attempt 1: Message: 
+Stacktrace:
+#0 0x555761e1836a <unknown>
+#1 0x55576178bf49 <unknown>
+#2 0x5557617e17e2 <unknown>
+#3 0x5557617e1a31 <unknown>
+#4 0x55576182ced4 <unknown>
+#5 0x55576182a0c3 <unknown>
+#6 0x5557617d4c92 <unknown>
+#7 0x5557617d5b11 <unknown>
+#8 0x555761ddd8d0 <unknown>
+#9 0x555761ddbf3a <unknown>
+#10 0x555761dc69b5 <unknown>
+#11 0x555761ddcc0a <unknown>
+#12 0x555761dae740 <unknown>
+#13 0x555761e039a8 <unknown>
+#14 0x555761e03b45 <unknown>
+#15 0x555761e16f1e <unknown>
+#16 0x7f2f9cc9cb84 <unknown>
+#17 0x7f2f9cd29d6c <unknown>
+
+2026-08-26 14:31:18,928 - scrap_logging - INFO - Entrando en la web: https://www.inmocasal.es/busqueda-avanzada/?gestion=comprar&propiedad=2&area=3&precioMin=0&precioMax=75000&ordenar=1&pagina=1
+2026-08-26 14:31:31,785 - scrap_logging - ERROR - Error accessing https://www.inmocasal.es/busqueda-avanzada/?gestion=comprar&propiedad=2&area=3&precioMin=0&precioMax=75000&ordenar=1&pagina=1 on attempt 2: Message: 
+Stacktrace:
+#0 0x555761e1836a <unknown>
+#1 0x55576178bf49 <unknown>
+#2 0x5557617e17e2 <unknown>
+#3 0x5557617e1a31 <unknown>
+#4 0x55576182ced4 <unknown>
+#5 0x55576182a0c3 <unknown>
+#6 0x5557617d4c92 <unknown>
+#7 0x5557617d5b11 <unknown>
+#8 0x555761ddd8d0 <unknown>
+#9 0x555761ddbf3a <unknown>
+#10 0x555761dc69b5 <unknown>
+#11 0x555761ddcc0a <unknown>
+#12 0x555761dae740 <unknown>
+#13 0x555761e039a8 <unknown>
+#14 0x555761e03b45 <unknown>
+#15 0x555761e16f1e <unknown>
+#16 0x7f2f9cc9cb84 <unknown>
+#17 0x7f2f9cd29d6c <unknown>
+
+2026-08-26 14:31:31,785 - scrap_logging - ERROR - Failed to save non-empty HTML content for https://www.inmocasal.es/busqueda-avanzada/?gestion=comprar&propiedad=2&area=3&precioMin=0&precioMax=75000&ordenar=1&pagina=1 after 2 retries.
+2026-08-26 14:31:31,786 - scrap_logging - INFO - Error get_total_pages(). Exception: [Errno 2] No such file or directory: 'inmocasal/page_1.html'
+2026-08-26 14:31:31,786 - scrap_logging - INFO - Total Properties: 0
+2026-08-26 14:31:35,759 - scrap_logging - INFO - Entrando en la web: https://www.inmocasal.es/busqueda-avanzada/?gestion=comprar&propiedad=6&area=3&precioMin=0&precioMax=75000&ordenar=1&pagina=1
+2026-08-26 14:31:49,517 - scrap_logging - ERROR - Error accessing https://www.inmocasal.es/busqueda-avanzada/?gestion=comprar&propiedad=6&area=3&precioMin=0&precioMax=75000&ordenar=1&pagina=1 on attempt 1: Message: 
+Stacktrace:
+#0 0x560d97bdb36a <unknown>
+#1 0x560d9754ef49 <unknown>
+#2 0x560d975a47e2 <unknown>
+#3 0x560d975a4a31 <unknown>
+#4 0x560d975efed4 <unknown>
+#5 0x560d975ed0c3 <unknown>
+#6 0x560d97597c92 <unknown>
+#7 0x560d97598b11 <unknown>
+#8 0x560d97ba08d0 <unknown>
+#9 0x560d97b9ef3a <unknown>
+#10 0x560d97b899b5 <unknown>
+#11 0x560d97b9fc0a <unknown>
+#12 0x560d97b71740 <unknown>
+#13 0x560d97bc69a8 <unknown>
+#14 0x560d97bc6b45 <unknown>
+#15 0x560d97bd9f1e <unknown>
+#16 0x7fe33589cb84 <unknown>
+#17 0x7fe335929d6c <unknown>
+
+2026-08-26 14:31:51,569 - scrap_logging - INFO - Entrando en la web: https://www.inmocasal.es/busqueda-avanzada/?gestion=comprar&propiedad=6&area=3&precioMin=0&precioMax=75000&ordenar=1&pagina=1
+2026-08-26 14:32:04,323 - scrap_logging - ERROR - Error accessing https://www.inmocasal.es/busqueda-avanzada/?gestion=comprar&propiedad=6&area=3&precioMin=0&precioMax=75000&ordenar=1&pagina=1 on attempt 2: Message: 
+Stacktrace:
+#0 0x560d97bdb36a <unknown>
+#1 0x560d9754ef49 <unknown>
+#2 0x560d975a47e2 <unknown>
+#3 0x560d975a4a31 <unknown>
+#4 0x560d975efed4 <unknown>
+#5 0x560d975ed0c3 <unknown>
+#6 0x560d97597c92 <unknown>
+#7 0x560d97598b11 <unknown>
+#8 0x560d97ba08d0 <unknown>
+#9 0x560d97b9ef3a <unknown>
+#10 0x560d97b899b5 <unknown>
+#11 0x560d97b9fc0a <unknown>
+#12 0x560d97b71740 <unknown>
+#13 0x560d97bc69a8 <unknown>
+#14 0x560d97bc6b45 <unknown>
+#15 0x560d97bd9f1e <unknown>
+#16 0x7fe33589cb84 <unknown>
+#17 0x7fe335929d6c <unknown>
+
+2026-08-26 14:32:04,324 - scrap_logging - ERROR - Failed to save non-empty HTML content for https://www.inmocasal.es/busqueda-avanzada/?gestion=comprar&propiedad=6&area=3&precioMin=0&precioMax=75000&ordenar=1&pagina=1 after 2 retries.
+2026-08-26 14:32:04,324 - scrap_logging - INFO - Error get_total_pages(). Exception: [Errno 2] No such file or directory: 'inmocasal/page_1.html'
+2026-08-26 14:32:04,324 - scrap_logging - INFO - Total Properties: 0
+2026-08-26 14:32:09,401 - scrap_logging - INFO - Entrando en la web: https://www.inmocasal.es/busqueda-avanzada/?gestion=comprar&propiedad=2&area=4&precioMin=0&precioMax=75000&ordenar=1&pagina=1
+2026-08-26 14:32:14,842 - scrap_logging - INFO - HTML saved to inmocasal/page_1.html.
+2026-08-26 14:32:14,930 - scrap_logging - INFO - Número de páginas: 2
+2026-08-26 14:32:14,930 - scrap_logging - INFO - Total Properties: 2
+2026-08-26 14:32:14,930 - scrap_logging - INFO - ----------------------------------------------------------------------------------------------------
+2026-08-26 14:32:14,930 - scrap_logging - INFO - Scraping page 1/2...
+2026-08-26 14:32:14,930 - scrap_logging - INFO - Skipping download: inmocasal/page_1.html already exists.
+2026-08-26 14:32:15,015 - scrap_logging - INFO - Number of items: 320
+2026-08-26 14:32:15,015 - scrap_logging - INFO - ----------------------------------------------------------------------------------------------------
+2026-08-26 14:32:15,015 - scrap_logging - INFO - Scraping page 2/2...
+2026-08-26 14:32:19,838 - scrap_logging - INFO - Entrando en la web: https://www.inmocasal.es/busqueda-avanzada/?gestion=comprar&propiedad=2&area=4&precioMin=0&precioMax=75000&ordenar=1&pagina=1
+2026-08-26 14:32:22,550 - scrap_logging - INFO - HTML saved to inmocasal/page_2.html.
+2026-08-26 14:32:22,649 - scrap_logging - INFO - Number of items: 320
+2026-08-26 14:32:23,178 - scrap_logging - INFO - Skipping download: inmocasal/page_1.html already exists.
+2026-08-26 14:32:23,314 - scrap_logging - INFO - Número de páginas: 2
+2026-08-26 14:32:23,314 - scrap_logging - INFO - Total Properties: 2
+2026-08-26 14:32:23,314 - scrap_logging - INFO - ----------------------------------------------------------------------------------------------------
+2026-08-26 14:32:23,314 - scrap_logging - INFO - Scraping page 1/2...
+2026-08-26 14:32:23,314 - scrap_logging - INFO - Skipping download: inmocasal/page_1.html already exists.
+2026-08-26 14:32:23,472 - scrap_logging - INFO - Number of items: 320
+2026-08-26 14:32:23,472 - scrap_logging - INFO - ----------------------------------------------------------------------------------------------------
+2026-08-26 14:32:23,472 - scrap_logging - INFO - Scraping page 2/2...
+2026-08-26 14:32:23,472 - scrap_logging - INFO - Skipping download: inmocasal/page_2.html already exists.
+2026-08-26 14:32:23,576 - scrap_logging - INFO - Number of items: 320
+2026-08-26 14:32:25,090 - scrap_logging - INFO - Skipping download: inmocasal/page_1.html already exists.
+2026-08-26 14:32:25,205 - scrap_logging - INFO - Número de páginas: 2
+2026-08-26 14:32:25,205 - scrap_logging - INFO - Total Properties: 2
+2026-08-26 14:32:25,205 - scrap_logging - INFO - ----------------------------------------------------------------------------------------------------
+2026-08-26 14:32:25,205 - scrap_logging - INFO - Scraping page 1/2...
+2026-08-26 14:32:25,205 - scrap_logging - INFO - Skipping download: inmocasal/page_1.html already exists.
+2026-08-26 14:32:25,303 - scrap_logging - INFO - Number of items: 320
+2026-08-26 14:32:25,303 - scrap_logging - INFO - ----------------------------------------------------------------------------------------------------
+2026-08-26 14:32:25,303 - scrap_logging - INFO - Scraping page 2/2...
+2026-08-26 14:32:25,303 - scrap_logging - INFO - Skipping download: inmocasal/page_2.html already exists.
+2026-08-26 14:32:25,394 - scrap_logging - INFO - Number of items: 320
+2026-08-26 14:32:25,898 - scrap_logging - INFO - Skipping download: inmocasal/page_1.html already exists.
+2026-08-26 14:32:26,030 - scrap_logging - INFO - Número de páginas: 2
+2026-08-26 14:32:26,031 - scrap_logging - INFO - Total Properties: 2
+2026-08-26 14:32:26,031 - scrap_logging - INFO - ----------------------------------------------------------------------------------------------------
+2026-08-26 14:32:26,031 - scrap_logging - INFO - Scraping page 1/2...
+2026-08-26 14:32:26,031 - scrap_logging - INFO - Skipping download: inmocasal/page_1.html already exists.
+2026-08-26 14:32:26,146 - scrap_logging - INFO - Number of items: 320
+2026-08-26 14:32:26,146 - scrap_logging - INFO - ----------------------------------------------------------------------------------------------------
+2026-08-26 14:32:26,146 - scrap_logging - INFO - Scraping page 2/2...
+2026-08-26 14:32:26,146 - scrap_logging - INFO - Skipping download: inmocasal/page_2.html already exists.
+2026-08-26 14:32:26,285 - scrap_logging - INFO - Number of items: 320
+2026-08-26 14:32:26,344 - scrap_logging - INFO -             ref  ... inmobiliaria
+0        743815  ...        axius
+1    LF00004246  ...    inmocasal
+2    LF00004305  ...    inmocasal
+3    LF00002743  ...    inmocasal
+4    LF00004352  ...    inmocasal
+..          ...  ...          ...
+315  MR00002220  ...    inmocasal
+316  AV00002807  ...    inmocasal
+317  MR00002206  ...    inmocasal
+318  MR00002157  ...    inmocasal
+319  MI00004405  ...    inmocasal
+
+[320 rows x 4 columns]
+2026-08-26 14:32:26,354 - scrap_logging - INFO - ----------------------------------------------------------------------------------------------------
+2026-08-26 14:32:26,354 - scrap_logging - INFO - Empty DataFrame
+Columns: [ref, price, url, inmobiliaria]
+Index: []
+2026-08-26 14:32:26,355 - scrap_logging - INFO - No new properties are available. Email won't be sent.
